@@ -89,7 +89,7 @@ function parse_metadata($data, $html, $solr=false, $dpla=false, $special_options
       $html .= "</b></div><div class='drs-field-value'>";
       if (is_array($value)){
         for ($i =0; $i<count($value); $i++){
-          
+
           $fieldValue = $value[$i];
           // @TODO this is a band aid. There's lots to figure out about how
           // this actually works with the data sources, especially DPLA
@@ -103,7 +103,7 @@ function parse_metadata($data, $html, $solr=false, $dpla=false, $special_options
             $html .= $fieldValue;
           } else {
             $string = $fieldValue;
-            
+
             $link_pattern = "/(?i)\\b(?:https?:\\/\\/|www\\d{0,3}[.]|[a-z0-9.\\-]+[.][a-z]{2,4}\\/)(?:[^\\s()<>]+|\\([^\\s()<>]+|\\([^\\s()<>]+\\)*\\))+(?:\\([^\\s()<>]+|\\([^\\s()<>]+\\)*\\)|[^\\s`!()\\[\\]{};:'\".,<>?«»“”‘’])/i";
             $email_pattern = "/[A-Z0-9_\\.%\\+\\-\\']+@(?:[A-Z0-9\\-]+\\.)+(?:[A-Z]{2,4}|museum|travel)/i";
             preg_match_all($link_pattern, $string, $link_matches);
@@ -260,7 +260,7 @@ function get_item_breadcrumbs(){
   } else {
     $breadcrumbs = new StdClass;
   }
-  if (array_key_exists($collection,$breadcrumbs)){
+  if (isset($collection,$breadcrumbs)){
     foreach($breadcrumbs as $pid=>$this_title){
       if ($pid == $item_pid){
         $breadcrumb_html[]= "<a href='".drstk_home_url()."item/".$pid."'> ".$this_title."</a>";
@@ -352,8 +352,8 @@ function get_item_image(){
      echo $gallery_html;
    }
  } else if (isset($data->canonical_object)){
-    $val = current($data->canonical_object);
-    $key = key($data->canonical_object);
+    $val = $data->canonical_object;
+    $key = $data->canonical_object;
     if ($val == 'Master Image'){
       if ($repo == "wp"){
         $zoom_img = $data->guid;
@@ -687,10 +687,10 @@ function associated_ajax_handler() {
 /**
  * Get a value of data from the associated content for an item, as
  * declared on the Item Pages Custom Text post
- * 
+ *
  * Essentially a rework of the older get_item_extension function, which only returned
- * the post's content, not the post itself. 
- * 
+ * the post's content, not the post itself.
+ *
  * @param string $data The data to return, one of 'content', 'placement'
  */
 
@@ -722,7 +722,7 @@ function drstk_get_custom_content_data($data) {
     while ( $meta_query->have_posts() ) {
       $meta_query->the_post();
       $post_id = $post->ID;
-      
+
       switch ($data) {
         case 'content':
           $content = get_the_content();
@@ -739,13 +739,13 @@ function drstk_get_custom_content_data($data) {
           wp_reset_postdata();
           return $content;
           break;
-          
+
         case 'placement':
           $placement = get_post_meta( $post->ID, 'drstk-custom-content-placement', true);
           wp_reset_postdata();
           return $placement;
           break;
-          
+
         default:
           wp_reset_postdata();
           return '';
