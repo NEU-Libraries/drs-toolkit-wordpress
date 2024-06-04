@@ -19,7 +19,17 @@ require_once( plugin_dir_path( __FILE__ ) . 'inc/map_shortcode.php');
 require_once( plugin_dir_path( __FILE__ ) . 'inc/timeline_shortcode.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'inc/metabox.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'config.php' );
-//require_once( plugin_dir_path( __FILE__ ) . 'ceres_adapters.php' );
+
+
+/* Moving toward a Ceres namespace for podcasting */
+// require_once( plugin_dir_path( __FILE__ ) . 'classes/fetchers/Ceres_Abstract_Fetcher.php' );
+// require_once( plugin_dir_path( __FILE__ ) . 'classes/renderers/Ceres_Abstract_Renderer.php' );
+// require_once( plugin_dir_path( __FILE__ ) . 'classes/fetchers/Ceres_Drs_Fetcher.php' );
+// require_once( plugin_dir_path( __FILE__ ) . 'classes/renderers/Ceres_Podcast_Renderer.php' );
+// require_once( plugin_dir_path( __FILE__ ) . 'classes/renderers/Ceres_Podcast_Rss_Renderer.php' );
+// require_once( plugin_dir_path( __FILE__ ) . 'classes/renderers/Ceres_Jwplayer_Renderer.php' );
+
+
 
 
 define( 'ALLOW_UNFILTERED_UPLOADS', true ); //this will allow files without extensions - aka from fedora
@@ -1214,7 +1224,7 @@ function drstk_mirador_script() {
 /*fix for weird jumpiness in wp admin menu*/
 function fix_admin_head() {
 	echo "<script type='text/javascript'>jQuery(window).load(function(){jQuery('#adminmenuwrap').hide().show(0);});</script>";
-  echo "<style>#start-pt-pb-tour{display:none !important;}";
+  echo "<style>#start-pt-pb-tour{display:none !important;}</style>";
 }
 add_action( 'admin_head', 'fix_admin_head' );
 
@@ -1514,6 +1524,8 @@ function drstk_add_podcast_feed() {
   add_feed('podcasts', 'drstk_render_podcast_feed');
 }
 
+
+
 //@TODO: delete this. it's for debugging
 function drstk_turn_off_feed_caching( $feed ) {
 	$feed->enable_cache( false );
@@ -1525,3 +1537,6 @@ function debug_change_feed_cache_transient_lifetime($seconds) {
 add_filter( 'wp_feed_cache_transient_lifetime', 'debug_change_feed_cache_transient_lifetime', 200000);
 add_action( 'wp_feed_options', 'drstk_turn_off_feed_caching' );
 /* End Dev on Podcast site */
+
+
+require_once( plugin_dir_path( __FILE__ ) . 'ceres_adapters.php' );

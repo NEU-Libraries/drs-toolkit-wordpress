@@ -13,6 +13,9 @@ Relies on Javascript being enabled and AJAX - Should work in IE10 and up, Chrome
 
 [Corresponding theme](https://github.com/NEU-Libraries/drs-toolkit-wp-theme)
 
+### For developers
+If you are _not_ using the CERES library, rename `ceres_adapters.php` to `ceres_adapters.php.dist`, unless that is already in the distribution.
+
 ### New in version v1.2
 
 First, it has a version in git. This will allow for better tracking and debugging. It also cleans up many code and logic issues, and moves toward a more generalized error-reporting mechanism. See [Release Notes](https://github.com/NEU-Libraries/drs-toolkit-wp-plugin/releases) for details.

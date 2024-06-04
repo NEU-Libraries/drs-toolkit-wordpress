@@ -1,7 +1,7 @@
 .DS_Store
 */.DS_Store
+ceres_adapters.php
 deploy.sh
-config.php
 config.php.keyedback
 devMessage.php
 .idea/
