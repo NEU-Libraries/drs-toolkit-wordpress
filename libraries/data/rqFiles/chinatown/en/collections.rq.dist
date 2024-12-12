@@ -1,0 +1,154 @@
+SELECT DISTINCT ?langCode ?qid ?collectionLabel 
+?collectionTypePropLabel ?collectionTypeLabel ?description ?descriptionPropLabel ?wdItemPropLabel ?wdItem ?describedAtURLPropLabel 
+?describedAtURL ?officialWebsitePropLabel ?officialWebsite ?creatorPropLabel ?creators ?maintainerPropLabel ?maintainers
+?materialsStartPropLabel ?materialsEndPropLabel (YEAR(?materialsStart) as ?materialsStartYear) (YEAR(?materialsEnd) as ?materialsEndYear)
+?digitizationStatusPropLabel ?digitizationStatusLabel ?accessStatusPropLabel ?accessStatusLabel 
+?generalRecordsTypes ?generalRecordsPropLabel ?specificRecordsTypes ?specificRecordsPropLabel
+?subjects ?subjectPropLabel ?languages ?languagePropLabel ?collectionTitle ?collectionTitlePropLabel 
+?accessPolicy ?accessPolicyPropLabel ?projectStatus ?projectStatusPropLabel
+?projectStartPropLabel ?projectEndPropLabel (YEAR(?projectStart) as ?projectStartYear) (YEAR(?projectEnd) as ?projectEndYear)
+?donors ?donorPropLabel
+WHERE {
+  # variables used in query
+  BIND(wdt:P7 AS ?instanceOf).
+  BIND(wdt:P27 AS ?hasTitle).
+  BIND(wdt:P50 AS ?hasCollectionType).
+  BIND(wdt:P37 AS ?hasDescription).
+  BIND(wdt:P33 AS ?hasWikidataItem).
+  BIND(wdt:P17 AS ?hasDescriptionSite).
+  BIND(wdt:P22 AS ?hasWebsite).
+  BIND(wdt:P30 AS ?hasMaterialsStartDate).
+  BIND(wdt:P31 AS ?hasMaterialsEndDate).
+  BIND(wdt:P40 AS ?hasDigitizationStatus).
+  BIND(wdt:P32 AS ?hasAccessStatus).
+  BIND(wdt:P41 AS ?hasAccessPolicy).
+  BIND(wdt:P42 AS ?hasProjectStatus)
+  BIND(wdt:P43 AS ?hasProjectStartDate).
+  BIND(wdt:P44 AS ?hasProjectEndDate).
+  BIND(wdt:P28 AS ?hasCreator).
+  BIND(wdt:P11 AS ?hasMaintainer).
+  BIND(wdt:P38 AS ?hasGeneralRecordsType).
+  BIND(wdt:P48 AS ?hasSpecificRecordsType).
+  BIND(wdt:P23 AS ?hasSubject).
+  BIND(wdt:P13 AS ?hasLanguage).
+  BIND(wdt:P24 AS ?hasDonor).
+
+  BIND(wd:Q85 AS ?ChinatownCollection).
+  BIND("en" as ?langCode).
+  BIND("http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/" AS ?baseURI).
+
+  ?collection ?instanceOf ?ChinatownCollection;
+              ?hasTitle ?collectionTitle.
+
+  FILTER(LANG(?collectionTitle) = ?langCode).
+   
+  BIND(REPLACE(STR(?collection), ?baseURI, "") AS ?qid).
+  OPTIONAL{?collection ?hasCollectionType ?collectionType.}
+  OPTIONAL{?collection ?hasDescription ?description.
+          FILTER(LANG(?description) = ?langCode).}
+  OPTIONAL{?collection ?hasWikidataItem ?wdItem.}
+  OPTIONAL{?collection ?hasDescriptionSite ?describedAtURL.}
+  OPTIONAL{?collection ?hasWebsite ?officialWebsite.}
+  OPTIONAL{?collection ?hasMaterialsStartDate ?materialsStart.}
+  OPTIONAL{?collection ?hasMaterialsEndDate ?materialsEnd.}
+  OPTIONAL{?collection ?hasDigitizationStatus ?digitizationStatus.}
+  OPTIONAL{?collection ?hasAccessStatus ?accessStatus.}
+  OPTIONAL{?collection ?hasAccessPolicy ?accessPolicy.
+            FILTER(LANG(?accessPolicy) = ?langCode).}
+   OPTIONAL{?collection ?hasProjectStatus ?projectStatus.
+            FILTER(LANG(?projectStatus) = ?langCode).}
+   OPTIONAL{?collection ?hasProjectStartDate ?projectStart.}
+   OPTIONAL{?collection ?hasProjectEndDate ?projectEnd.}
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". 
+      ?collection rdfs:label ?collectionLabel.
+      ?collectionTitleProp rdfs:label ?collectionTitlePropLabel.
+      ?collectionType rdfs:label ?collectionTypeLabel.
+      ?wdItemProp rdfs:label ?wdItemPropLabel.
+      ?describedAtURLProp rdfs:label ?describedAtURLPropLabel.
+      ?officialWebsiteProp rdfs:label ?officialWebsitePropLabel.
+      ?creatorProp rdfs:label ?creatorPropLabel.
+      ?maintainerProp rdfs:label ?maintainerPropLabel.
+      ?materialsStartProp rdfs:label ?materialsStartPropLabel.
+      ?materialsEndProp rdfs:label ?materialsEndPropLabel.
+      ?descriptionProp rdfs:label ?descriptionPropLabel.
+      ?collectionTypeProp rdfs:label ?collectionTypePropLabel.
+      ?digitizationStatus rdfs:label ?digitizationStatusLabel.
+      ?digitizationStatusProp rdfs:label ?digitizationStatusPropLabel.
+      ?accessStatus rdfs:label ?accessStatusLabel.
+      ?accessStatusProp rdfs:label ?accessStatusPropLabel.
+      ?generalRecordsProp rdfs:label ?generalRecordsPropLabel.
+      ?specificRecordsProp rdfs:label ?specificRecordsPropLabel.
+      ?subjectProp rdfs:label ?subjectPropLabel.
+      ?languageProp rdfs:label ?languagePropLabel.
+      ?accessPolicyProp rdfs:label ?accessPolicyPropLabel.
+      ?projectStatusProp rdfs:label ?projectStatusPropLabel.
+      ?projectStartProp rdfs:label ?projectStartPropLabel.
+      ?projectEndProp rdfs:label ?projectEndPropLabel.
+      ?donorProp rdfs:label ?donorPropLabel.
+   }
+  ?collectionTitleProp wikibase:directClaim ?hasTitle.
+  ?collectionTypeProp wikibase:directClaim ?hasCollectionType.
+  ?descriptionProp wikibase:directClaim ?hasDescription.
+  ?wdItemProp wikibase:directClaim ?hasWikidataItem.
+  ?describedAtURLProp wikibase:directClaim ?hasDescriptionSite.
+  ?officialWebsiteProp wikibase:directClaim ?hasWebsite.
+  ?materialsStartProp wikibase:directClaim ?hasMaterialsStartDate.
+  ?materialsEndProp wikibase:directClaim ?hasMaterialsEndDate.
+  ?digitizationStatusProp wikibase:directClaim ?hasDigitizationStatus.
+  ?accessStatusProp wikibase:directClaim ?hasAccessStatus.
+  ?accessPolicyProp wikibase:directClaim ?hasAccessPolicy.
+  ?projectStatusProp wikibase:directClaim ?hasProjectStatus.
+  ?projectStartProp wikibase:directClaim ?hasProjectStartDate.
+  ?projectEndProp wikibase:directClaim ?hasProjectEndDate.
+  ?creatorProp wikibase:directClaim ?hasCreator.
+  ?maintainerProp wikibase:directClaim ?hasMaintainer. 
+  ?generalRecordsProp wikibase:directClaim ?hasGeneralRecordsType.
+  ?specificRecordsProp wikibase:directClaim ?hasSpecificRecordsType.
+  ?subjectProp wikibase:directClaim ?hasSubject.
+  ?languageProp wikibase:directClaim ?hasLanguage.
+  ?donorProp wikibase:directClaim ?hasDonor.
+   
+  {
+    SELECT ?innerCollection 
+          (group_concat(distinct ?generalRecordsLabel; separator="; ") as ?generalRecordsTypes)
+          (group_concat(distinct ?specificRecordsLabel; separator="; ") as ?specificRecordsTypes)
+          (group_concat(distinct ?subjectLabel; separator="; ") as ?subjects)
+          (group_concat(distinct ?languageLabel; separator="; ") as ?languages)
+          (group_concat(distinct ?creatorLink; separator="; ") as ?creators)
+          (group_concat(distinct ?maintainerLink; separator="; ") as ?maintainers)
+          (group_concat(distinct ?donorLink; separator="; ") as ?donors)
+    WHERE {
+      ?innerCollection wdt:P7 wd:Q85.
+      OPTIONAL{?innerCollection wdt:P38 ?generalRecords}
+      OPTIONAL{?innerCollection wdt:P48 ?specificRecords}
+      OPTIONAL{?innerCollection wdt:P23 ?subject}
+      OPTIONAL{?innerCollection wdt:P13 ?language}
+      OPTIONAL{?innerCollection wdt:P28 ?creator.
+        BIND(REPLACE(STR(?creator), "http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/", "") AS ?creatorQid).
+        ?creator rdfs:label ?creatorLabel.
+        FILTER(LANG(?creatorLabel) = "en").
+        BIND(CONCAT("<a href='./", STR(?creatorQid), ".html'>", STR(?creatorLabel), "</a>") AS ?creatorLink).
+      }
+      OPTIONAL{?innerCollection wdt:P11 ?maintainer.
+      BIND(REPLACE(STR(?maintainer), "http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/", "") AS ?maintainerQid).
+      ?maintainer rdfs:label ?maintainerLabel.
+      FILTER(LANG(?maintainerLabel) = "en").
+      BIND(CONCAT("<a href='./", STR(?maintainerQid), ".html'>", STR(?maintainerLabel), "</a>") AS ?maintainerLink).
+      }
+      OPTIONAL{?innerCollection wdt:P24 ?donor.
+      BIND(REPLACE(STR(?donor), "http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/", "") AS ?donorQid).
+      ?donor rdfs:label ?donorLabel.
+      FILTER(LANG(?donorLabel) = "en").
+      BIND(CONCAT("<a href='./", STR(?donorQid), ".html'>", STR(?donorLabel), "</a>") AS ?donorLink).
+      }
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "en". 
+        ?generalRecords rdfs:label ?generalRecordsLabel.
+        ?specificRecords rdfs:label ?specificRecordsLabel. 
+        ?subject rdfs:label ?subjectLabel.
+        ?language rdfs:label ?languageLabel.            
+      }
+    }
+    GROUP BY ?innerCollection
+  }
+FILTER(?innerCollection = ?collection)
+} ORDER BY (?collectionLabel)

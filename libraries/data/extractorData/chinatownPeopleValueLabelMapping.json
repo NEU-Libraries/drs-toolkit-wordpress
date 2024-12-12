@@ -1,0 +1,19 @@
+{
+    "personLabel"  :  "name",
+    "createdCollections"  :  "records creator",
+    "maintainsCollections" :  "maintainer",
+    "donatedCollections"  :  "donor",
+    "personDescription"  :  "Description",
+    "foundedOrganizations" :  "Organizations Founded",
+    "langCode"  :  "Language Code",
+    "qid"  :  "ID for use elsewhere",
+    "donorPropLabel" :  null,
+    "creatorPropLabel" :  null,
+    "maintainerPropLabel" :  null,
+    "founderPropLabel" :  null,
+    "name"  :  "Name",
+    "officialWebsite"  :  "Website",
+    "officialWebsitePropLabel"  :  null,
+    "emailAddress"  :  "Email",
+    "emailAddressPropLabel"  :  null
+}

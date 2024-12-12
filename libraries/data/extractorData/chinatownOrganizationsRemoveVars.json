@@ -1,0 +1,22 @@
+[
+    "langCode",
+    "qid",
+    "officialWebsitePropLabel",
+    "officialWebsite",
+    "emailAddress",
+    "emailAddressPropLabel",
+    "personLabel",
+    "createdCollections",
+    "maintainsCollections",
+    "donatedCollections",
+    "description",
+    "wdItemPropLabel",
+    "wdItem",
+    "orgTypePropLabel",
+    "streetAddressPropLabel",
+    "inceptionPropLabel",
+    "phoneNumber",
+    "phoneNumberPropLabel",
+    "officialName",
+    "officialNamePropLabel"
+]

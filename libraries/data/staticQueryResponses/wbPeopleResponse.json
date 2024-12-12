@@ -1,0 +1,1698 @@
+{
+  "head" : {
+    "vars" : [ "langCode", "qid", "personLabel", "personDescription", "createdCollections", "foundedOrganizations", "maintainsCollections", "donatedCollections", "donorPropLabel", "creatorPropLabel", "maintainerPropLabel", "founderPropLabel", "name", "namePropLabel", "officialWebsite", "officialWebsitePropLabel", "emailAddress", "emailAddressPropLabel" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "reporter for Sampan"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Carmen Chan"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q147.html'>Carmen Chan's Sampan photos</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q147.html'>Carmen Chan's Sampan photos</a>"
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q213"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Carmen Chan"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:carmenschan@gmail.com"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "daughter of Mong Q. Lee"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Carol Mon Lee"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q170.html'>Mong Q. Lee collection</a>"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q224"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Carol Mon Lee"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston-based activist and community leader"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Caroline Chang"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q153.html'>Caroline Chang collection</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : "<a href='./Q88.html'>Chinese Historical Society of New England</a>"
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q220"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Caroline Chang"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston-based activist"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cheng Imm Tan"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q154.html'>Cheng Imm Tan papers</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q203"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cheng Imm Tan"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community artist, multimedia artist, and educator"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Crystal Bi Wegner"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q155.html'>Chinatown Story Cart</a>"
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q222"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Crystal Bi Wegner"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.crystal-bi.com/"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "daughter of Mong Q. Lee"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cynthia Lee Johnson"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q170.html'>Mong Q. Lee collection</a>"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q223"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cynthia Lee Johnson"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "educator, writer, artist and artistic collaborator"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cynthia Yee"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q163.html'>Hudson Street Chronicles</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q163.html'>Hudson Street Chronicles</a>"
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q215"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cynthia Yee"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:yeecynth@gmail.com"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://hudsonstreetchronicles.com/"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston-based artist"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Gianna Stewart"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q175.html'>Storytelling sessions with ACDC Hudson Street residents and Cynthia Yee January 2020</a>"
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q228"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Gianna Stewart"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:gianna.works@gmail.com"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.gianna.works/"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston-based lawyer and activist"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Harry Hom Dow"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q161.html'>Harry Hom Dow Papers</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q202"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Harry Hom Dow"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Asian-American community and housing development activist in Boston"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Jacquie L. Kay"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q150.html'>Asian Community Development Corporation (Jacquie L. Kay) records</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : "<a href='./Q86.html'>Asian Community Development Corporation</a>"
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q96"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Jacquie L. Kay"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "owner of the Shanghai Printing Company in Boston"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Jeffrey Wong"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q165.html'>Jeffrey Wong type sets</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q216"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Jeffrey Wong"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "documentary filmmaker and writer"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Judy Branfman"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q166.html'>Judy Branfman papers and \"Standing Our Ground\" records</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q204"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Judy Branfman"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "granddaughter of Rose Lok"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Layne Wong"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q174.html'>Rose Lok Collection</a>"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q226"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Layne Wong"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "artist and educator"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Lily Xie"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q178.html'>Washing</a>; <a href='./Q155.html'>Chinatown Story Cart</a>"
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q221"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Lily Xie"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:lxie9195@gmail.com"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.lily-xie.com/"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston-based activist"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Lydia Lowe"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q159.html'>Chinese Women Workers' Oral History Project</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q40.html'>Chinese Progressive Association records</a>; <a href='./Q159.html'>Chinese Women Workers' Oral History Project</a>"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q205"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Lydia Lowe"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "restauranteur"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Margaret Wong"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q168.html'>Margaret Wong Collection [restauranteur]</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q217"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Margaret Wong"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston-based painter"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Mong Q. Lee"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q170.html'>Mong Q. Lee collection</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q97"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Mong Q. Lee"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "mother of Rose Lok"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Moy Lok"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q174.html'>Rose Lok Collection</a>"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q225"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Moy Lok"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "first female Chinese-American pilot in New England"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Rose Lok"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q174.html'>Rose Lok Collection</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q98"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Rose Lok"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "grandson of Francis P. Kendall (instructor for Chinese Patriotic Flying Club of Boston)"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Tim Kendall"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q174.html'>Rose Lok Collection</a>"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q227"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Tim Kendall"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese-born American urban planner"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Tunney Lee"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q176.html'>Tunney Lee Collection</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : "<a href='./Q86.html'>Asian Community Development Corporation</a>"
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q92"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Tunney Lee"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      }
+    }, {
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "personDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston-based visual artist"
+      },
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Yu-Wen Wu"
+      },
+      "createdCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q181.html'>Yu-Wen Wu Lantern Projects</a>"
+      },
+      "foundedOrganizations" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "maintainsCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q181.html'>Yu-Wen Wu Lantern Projects</a>; <a href='./Q165.html'>Jeffrey Wong type sets</a>"
+      },
+      "donatedCollections" : {
+        "type" : "literal",
+        "value" : "<a href='./Q165.html'>Jeffrey Wong type sets</a>"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q93"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Yu-Wen Wu"
+      },
+      "donorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "donor"
+      },
+      "creatorPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "records creator"
+      },
+      "maintainerPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "maintainer"
+      },
+      "founderPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "founder"
+      },
+      "namePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "name"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:ywustudios@gmail.com"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.yuwenwu.com/"
+      }
+    } ]
+  }
+}

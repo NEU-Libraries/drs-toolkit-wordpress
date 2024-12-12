@@ -1,0 +1,1528 @@
+{
+  "head" : {
+    "vars" : [ "langCode", "qid", "organizationLabel", "description", "wdItemPropLabel", "wdItem", "officialWebsitePropLabel", "officialWebsite", "orgTypePropLabel", "orgTypeLabel", "streetAddress", "streetAddressPropLabel", "inceptionYear", "inceptionPropLabel", "phoneNumber", "phoneNumberPropLabel", "emailAddress", "emailAddressPropLabel", "officialName", "officialNamePropLabel" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Asian American Resource Workshop"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q94"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q110615971"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.aarw.org/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "42 Charles Street, Suite A, Dorchester, MA 02122"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 942-8178"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:info@aarw.org"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Asian American Resource Workshop"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1979"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Asian Community Development Corporation"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q86"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q4806605"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://asiancdc.org/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "38 Oak St, Boston, Massachusetts 02111"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 482-2380"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:info@asiancdc.org"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Asian Community Development Corporation"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1987"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston Greenspace Alliance"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q211"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston Greenspace Alliance"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston Urban Gardeners"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q210"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Boston Urban Gardeners"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cambridge Historical Commission"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q89"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q87979416"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.cambridgema.gov/historic"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "831 Massachusetts Ave., Cambridge, Massachusetts 02139"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 349-4683"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cambridge Historical Commission"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1963"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinatown Community Land Trust"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q207"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q113306795"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://chinatownclt.org/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "28 Ash Street, Boston, MA 02111"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 259-1503"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:participate@chinatownCLT.org"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinatown Community Land Trust"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2015"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese Consolidated Benevolent Association of New England"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q208"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q113307155"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://ccbaboston.org/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "90 Tyler Street, Boston, MA 02111"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 542-2574"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese Consolidated Benevolent Association of New England"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1923"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese Historical Society of New England"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q88"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q19879435"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "http://www.chsne.org/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "2 Boylston St, G-6, Boston, MA 02116"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 338-4339"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:info@chsne.org"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese Historical Society of New England"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "historical society"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1992"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese Progressive Association"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q43"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q19646078"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://cpaboston.org/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "28 Ash St., Boston, Massachusetts 02111"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 357-4499"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:justice@cpaboston.org"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese Progressive Association"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1977"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "City of Boston Archives"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q87"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q5123598"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://archives.cityofboston.gov/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "201 Rivermoor Street, West Roxbury, MA 02132"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 635-1195"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:archives@boston.gov"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "City of Boston Archives"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "municipal archive"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "International Society"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q95"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q110164940"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "International Society"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1978"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Kwong Kow Chinese School"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q212"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q22073835"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.kwongkowschool.org/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "87 Tyler Street, Boston, MA, 02111"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 426-6716"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:kwongkow@gmail.com"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Kwong Kow Chinese School"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1916"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Moakley Archive & Institute"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q201"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q113304030"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.suffolk.edu/academics/libraries/moakley-archive-and-institute"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "73 Tremont St. Boston, Massachusetts 02108"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 305-6277"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:archives@suffolk.edu"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Moakley Archive & Institute"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "academic archive"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2001"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Norman B. Leventhal Map & Education Center at the Boston Public Library"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q91"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q110963387"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.leventhalmap.org"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "700 Boylston Street, Boston, MA 02116"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 859-2387"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:info@leventhalmap.org"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Norman B. Leventhal Map & Education Center at the Boston Public Library"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "municipal archive"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2004"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Northeastern University Archives and Special Collections"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q42"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q109363303"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://library.northeastern.edu/archives-special-collections"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "360 Huntington Ave., Boston, Massachusetts 02115"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 373-2351"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:archives@neu.edu"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Northeastern University Archives and Special Collections"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "academic archive"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Radcliffe Institute for Advanced Study"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q90"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q7280030"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.radcliffe.harvard.edu/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "10 Garden St, Cambridge, MA 02138"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:info@radcliffe.harvard.edu"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Radcliffe Institute for Advanced Study"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "academic archive"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1999"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "University Archives and Special Collections, Joseph P. Healey Library, University of Massachusetts Boston"
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q206"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q113305890"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://www.umb.edu/library/about/departments/uasc"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "100 Morrissey Blvd., Boston, MA 02125"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 287-5900"
+      },
+      "emailAddress" : {
+        "type" : "uri",
+        "value" : "mailto:library.archives@umb.edu"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "University Archives and Special Collections, Joseph P. Healey Library, University of Massachusetts Boston"
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "academic archive"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1981"
+      }
+    }, {
+      "officialName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Wah Lum Kung Fu of the U.S.A."
+      },
+      "langCode" : {
+        "type" : "literal",
+        "value" : "en"
+      },
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q209"
+      },
+      "wdItem" : {
+        "type" : "literal",
+        "value" : "Q113307243"
+      },
+      "officialWebsite" : {
+        "type" : "uri",
+        "value" : "https://wahlumpai.us/"
+      },
+      "streetAddress" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "17 Edinboro St., Boston, MA 02111"
+      },
+      "phoneNumber" : {
+        "type" : "literal",
+        "value" : "(617) 350-7530"
+      },
+      "organizationLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Wah Lum Kung Fu of the U.S.A."
+      },
+      "wdItemPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "corresponding Wikidata item"
+      },
+      "officialWebsitePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official website"
+      },
+      "orgTypePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "organization type"
+      },
+      "orgTypeLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "community organization"
+      },
+      "streetAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "street address"
+      },
+      "inceptionPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "inception"
+      },
+      "phoneNumberPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "phone number"
+      },
+      "emailAddressPropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "email address"
+      },
+      "officialNamePropLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "official name"
+      },
+      "inceptionYear" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1970"
+      }
+    } ]
+  }
+}

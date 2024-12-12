@@ -1,0 +1,48 @@
+SELECT ?langCode ?qid ?organizationLabel ?description ?wdItemPropLabel ?wdItem 
+?officialWebsitePropLabel ?officialWebsite ?orgTypePropLabel ?orgTypeLabel 
+?streetAddress ?streetAddressPropLabel (year(?inception) as ?inceptionYear) ?inceptionPropLabel  
+?phoneNumber ?phoneNumberPropLabel ?emailAddress ?emailAddressPropLabel ?officialName ?officialNamePropLabel
+WHERE {
+   # variables used in query
+   BIND(wdt:P7 AS ?instanceOf).
+   BIND(wdt:P26 AS ?hasOfficialName).
+   BIND(wdt:P37 AS ?hasDescription).
+   BIND(wdt:P51 AS ?hasType).
+   BIND(wdt:P33 AS ?hasWikidataItem).
+   BIND(wdt:P22 AS ?hasWebsite).
+   BIND(wdt:P29 AS ?hasStreetAddress).
+   BIND(wdt:P19 AS ?hasInceptionDate).
+   BIND(wdt:P25 AS ?hasPhoneNumber).
+   BIND(wdt:P16 AS ?hasEmail).
+
+   BIND(wd:Q59 AS ?organizationClass).
+
+   BIND("en" as ?langCode).
+   BIND("http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/" AS ?baseURI).
+
+   ?organization ?instanceOf ?organizationClass;
+                 ?hasOfficialName ?officialName.
+   FILTER(LANG(?officialName) = ?langCode).
+
+   BIND(REPLACE(STR(?organization), ?baseURI, "") AS ?qid).
+
+   OPTIONAL{?organization ?hasDescription ?description.}
+   OPTIONAL{?organization ?hasType ?orgType.}
+   OPTIONAL{?organization ?hasWikidataItem ?wdItem.}
+   OPTIONAL{?organization ?hasWebsite ?officialWebsite.}
+   OPTIONAL{?organization ?hasStreetAddress ?streetAddress.}
+   OPTIONAL{?organization ?hasInceptionDate ?inception.} 
+   OPTIONAL{?organization ?hasPhoneNumber ?phoneNumber.}
+   OPTIONAL{?organization ?hasEmail ?emailAddress.}
+
+   ?officialNameProp wikibase:directClaim ?hasOfficialName.
+   ?orgTypeProp wikibase:directClaim ?hasType.
+   ?wdItemProp wikibase:directClaim ?hasWikidataItem.
+   ?officialWebsiteProp wikibase:directClaim ?hasWebsite.
+   ?streetAddressProp wikibase:directClaim ?hasStreetAddress. 
+   ?inceptionProp wikibase:directClaim ?hasInceptionDate.
+   ?phoneNumberProp wikibase:directClaim ?hasPhoneNumber.
+   ?emailAddressProp wikibase:directClaim ?hasEmail.
+   
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } 
+} ORDER BY (?organizationLabel)

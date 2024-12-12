@@ -1,0 +1,12 @@
+SELECT DISTINCT ?qid ?collectionLabel WHERE {
+   # variables used in query
+   BIND(wdt:P7 AS ?instanceOf).
+   BIND(wdt:P23 AS ?hasSubject).
+   BIND(wd:Q85 AS ?ChinatownCollection).
+   BIND("http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/" AS ?baseURI)
+
+  ?collection ?instanceOf ?ChinatownCollection;
+              ?hasSubject wd:{{.}}.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "zh" }
+  BIND(REPLACE(STR(?collection), ?baseURI, "") AS ?qid)
+} ORDER BY ?collectionLabel
