@@ -2,8 +2,8 @@
 /**
  * Plugin Name: CERES: Exhibit Toolkit Plugin
  * Plugin URI:
- * Version: 1.2
- * Author: Digital Scholarship Group, Northeastern University. Eli Zoller, Patrick Murray-John, et al.
+ * Version: 1.5.5
+ * Author: Digital Scholarship Group, Northeastern University. Eli Zoller, Patrick Murray-John, Jeanine Rodriguez et al.
  * Description: This plugin provides the core functionality of the CERES: Exhibit Toolkit and brings the content of a project from the DRS into Wordpress using the DRS API.
  */
 
@@ -38,7 +38,7 @@ define('DRS_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 define('DPLA_FALLBACK_IMAGE_URL', DRS_PLUGIN_URL . 'assets/images/DPLA-square-logo-color.jpeg');
 
-define('DRSTK_PODCAST_REGISTER_HTML', 
+define('DRSTK_PODCAST_REGISTER_HTML',
 "
 <small>When you register your podcast with this service, it will tell you the URL to use here.</small>
 <br /><small>Use this feed URL to tell the service where to look for your podcasts: <br />" . get_site_url() . "?feed=podcasts</small><br/>
@@ -63,13 +63,13 @@ $TEMPLATE_THEME = array(
  register_deactivation_hook( __FILE__, 'drstk_deactivation' );
  $all_meta_options = array("Title","Alternative Title","Creator","Contributor","Publisher","Type of Resource","Genre","Language","Physical Description","Abstract/Description","Table of contents","Notes","Subjects and keywords","Related item","Identifier","Access condition","Location","uri","Format","Permanent URL","Date created","Date issued","Copyright date","Biographical/Historical","Biográfica/histórica", "Issuance","Frequency","Digital origin","Map data","Use and reproduction","Restriction on access");
  $all_assoc_meta_options = array("full_title_ssi","creator_tesim","abstract_tesim");
- 
+
 
  /**
   * Rewrite rules for the plugin.
   */
  add_action('init', 'drstk_rewrite_rule');
- 
+
  function drstk_rewrite_rule() {
     global $post;
     $home_url = get_option('drstk_home_url');
@@ -153,7 +153,7 @@ function register_drs_settings() {
   register_setting( 'drstk_options', 'drstk_default_search_per_page' );
   add_settings_field('drstk_search_show_facets', 'Show Facets', 'drstk_search_show_facets_callback', 'drstk_options', 'drstk_search_settings');
   register_setting( 'drstk_options', 'drstk_search_show_facets' );
-  
+
   // Browse Settings
   add_settings_section('drstk_browse_settings', 'Browse', null, 'drstk_options');
   add_settings_field('drstk_browse_page_title', 'Browse Page Title', 'drstk_browse_page_title_callback', 'drstk_options', 'drstk_browse_settings');
@@ -170,7 +170,7 @@ function register_drs_settings() {
   add_settings_section('drstk_facet_settings', 'Facets', null, 'drstk_options');
   add_settings_field('drstk_facets', 'Facets to Display<br/><small>Select which facets you would like to display on the search and browse pages. Once selected, you may enter custom names for these facets. Drag and drop the order of the facets to change the order of display.</small>', 'drstk_facets_callback', 'drstk_options', 'drstk_facet_settings');
   register_setting( 'drstk_options', 'drstk_facets' );
-  
+
   $facet_options = drstk_facets_get_option('drstk', true);
   foreach($facet_options as $option){
     add_settings_field('drstk_'.$option.'_title', null, 'drstk_facet_title_callback', 'drstk_options', 'drstk_facet_settings', array('class'=>'hidden'));
@@ -205,7 +205,7 @@ function register_drs_settings() {
   register_setting( 'drstk_options', 'drstk_annotations' );
   add_settings_field('drstk_item_extensions', 'Enable Item Page Custom Text', 'drstk_item_extensions_callback', 'drstk_options', 'drstk_single_settings');
   register_setting( 'drstk_options', 'drstk_item_extensions' );
-  
+
   //Advanced Options
   add_settings_section('drstk_advanced', "Advanced", null, 'drstk_options');
   add_settings_field('drstk_is_podcast',
@@ -221,9 +221,9 @@ function register_drs_settings() {
       'drstk_options',
       'drstk_advanced');
   register_setting('drstk_options', 'drstk_podcast_poster');
-  
-  
-  
+
+
+
   add_settings_field('drstk_podcast_page',
                      'Select page to contain your podcast list',
                      'drstk_podcast_page_callback',
@@ -231,8 +231,8 @@ function register_drs_settings() {
                      'drstk_advanced',
                      array('class' => 'drstk_podcast_options'));
   register_setting('drstk_options', 'drstk_podcast_page');
-  
-  
+
+
   add_settings_field('drstk_podcast_author',
                     'Name to use as the podcast author (usually the instructor of record)',
                     'drstk_podcast_author_callback',
@@ -240,9 +240,9 @@ function register_drs_settings() {
                     'drstk_advanced',
                     array('class' => 'drstk_podcast_options'));
   register_setting('drstk_options', 'drstk_podcast_author');
-  
-  
-  
+
+
+
   add_settings_field('drstk_podcast_image_url',
                      'Image for podcast feed',
                      'drstk_podcast_image_url_callback',
@@ -250,7 +250,7 @@ function register_drs_settings() {
                      'drstk_advanced',
                       array('class' => 'drstk_podcast_options'));
   register_setting('drstk_options', 'drstk_podcast_image_url');
-  
+
   add_settings_field('drstk_itunes_link',
                      'Link to iTunes',
                      'drstk_itunes_link_callback',
@@ -267,7 +267,7 @@ function register_drs_settings() {
                      'drstk_advanced',
                       array('class' => 'drstk_podcast_options'));
   register_setting('drstk_options', 'drstk_googleplay_link');
-  
+
   add_settings_field('drstk_spotify_link',
                      'Link to Spotify',
                      'drstk_spotify_link_callback',
@@ -275,7 +275,7 @@ function register_drs_settings() {
                      'drstk_advanced',
                       array('class' => 'drstk_podcast_options'));
   register_setting('drstk_options', 'drstk_spotify_link');
-  
+
   add_settings_field('drstk_stitcher_link',
                      'Link to Stitcher',
                      'drstk_stitcher_link_callback',
@@ -283,7 +283,7 @@ function register_drs_settings() {
                      'drstk_advanced',
                       array('class' => 'drstk_podcast_options'));
   register_setting('drstk_options', 'drstk_stitcher_link');
-  
+
   add_settings_field('drstk_overcast_link',
                      'Link to Overcast',
                      'drstk_overcast_link_callback',
@@ -291,18 +291,18 @@ function register_drs_settings() {
                      'drstk_advanced',
                       array('class' => 'drstk_podcast_options'));
   register_setting('drstk_options', 'drstk_overcast_link');
-  
-  
 
-  
-  
+
+
+
+
   add_settings_field('drstk_niec',
                      'Does your project include NIEC metadata?',
                      'drstk_niec_callback',
                      'drstk_options',
                      'drstk_advanced');
   register_setting('drstk_options', 'drstk_niec');
-  
+
   add_settings_field('drstk_niec_metadata',
                      'NIEC Facets and Metadata to Display',
                      'drstk_niec_metadata_callback',
@@ -310,7 +310,7 @@ function register_drs_settings() {
                      'drstk_advanced',
                       array('class'=>'niec'));
   register_setting( 'drstk_options', 'drstk_niec_metadata' );
-  
+
   $niec_facet_options = drstk_facets_get_option('niec', true);
   foreach($niec_facet_options as $option){
     add_settings_field('drstk_niec_'.$option.'_title',
@@ -321,7 +321,7 @@ function register_drs_settings() {
                        array('class'=>'hidden'));
     register_setting( 'drstk_options', 'drstk_niec_'.$option.'_title');
   }
-  
+
   //Leaflet
   add_settings_field('leaflet_api_key',
                      'Leaflet API Key',
@@ -329,20 +329,20 @@ function register_drs_settings() {
                      'drstk_options',
                      'drstk_advanced');
   register_setting( 'drstk_options', 'leaflet_api_key' );
-  
+
   add_settings_field('leaflet_project_key',
                      'Leaflet Project Key',
                      'leaflet_project_key_callback',
                      'drstk_options',
                      'drstk_advanced');
   register_setting( 'drstk_options', 'leaflet_project_key' );
-  
+
   add_settings_field('drstk_assoc',
                      'Allow Mirador Page Viewer<br/><small>This requires a manifest file and modifications to a javascript file. Please contact the Toolkit team if you would like to enable this feature.</small>',
                      'drstk_mirador_callback', 'drstk_options',
                      'drstk_advanced');
   register_setting( 'drstk_options', 'drstk_mirador' );
-  
+
   add_settings_field('drstk_mirador_page_title',
                      'Mirador Page Title',
                      'drstk_mirador_page_title_callback',
@@ -350,7 +350,7 @@ function register_drs_settings() {
                      'drstk_advanced',
                      array('class'=>'mirador'));
   register_setting( 'drstk_options', 'drstk_mirador_page_title' );
-  
+
   add_settings_field('drstk_mirador_url',
                      'Mirador URL',
                      'drstk_mirador_url_callback',
@@ -358,14 +358,14 @@ function register_drs_settings() {
                      'drstk_advanced',
                       array('class'=>'mirador'));
   register_setting('drstk_options', 'drstk_mirador_url');
-  
-  
+
+
   //Google Maps key
-  
+
   //DPLA key
-  
-  
-  
+
+
+
 }
 add_action( 'admin_init', 'register_drs_settings' );
 add_action( 'admin_init', 'add_tinymce_plugin');
@@ -376,7 +376,7 @@ function drstk_api_url($source, $pid, $action, $sub_action = NULL, $url_argument
   $dak = constant("DPLA_API_KEY");
   $dau = constant("DRS_API_USER");
   $dap = constant("DRS_API_PASSWORD");
-  
+
   if($source == "drs"){
     $url .= "https://repository.library.northeastern.edu/api/v1";
   } else if ($source == "dpla"){
@@ -394,39 +394,39 @@ function drstk_api_url($source, $pid, $action, $sub_action = NULL, $url_argument
     //assuming the only else is DRS
     $url .= "/" . $action . "/";
   }
-  
+
   //DRS subaction of content_objects has special needs for building the URL
-  //PMJ assuming this only gets invoked when the action is 'files' 
+  //PMJ assuming this only gets invoked when the action is 'files'
   switch ($sub_action) {
     case 'content_objects':
       $url .= "$pid/$sub_action";
       break;
-      
+
     case null:
       //do nothing since there's no subaction
       $url .= $pid . "?";
       break;
-      
+
     default:
       //most common url construction
       $url .= $sub_action . "/";
       $url .= $pid . "?";
       break;
-    
+
   }
-  
+
   // @TODO it might be nice to guarantee somehow that before we get here we know the DPLA key is in place
   // since if it isn't this won't return anything anyway
   if($source == "dpla" && !empty($dak)){
     $url .= "api_key=" . DPLA_API_KEY . "&";
   }
-  
+
   if($source == "drs" && !(empty($dau) || empty($dap))){
     $token = drstk_drs_auth();
     if ($token != false && is_string($token))
     $url .= "token=" . $token . "&";
   }
-  
+
   //direct DPLA item pid barfs on extraneous params
   switch ($source) {
     case 'dpla':
@@ -434,7 +434,7 @@ function drstk_api_url($source, $pid, $action, $sub_action = NULL, $url_argument
         $url .= $url_arguments;
       }
       break;
-      
+
     case 'drs':
       if($url_arguments != NULL){
         $url .= $url_arguments;
@@ -462,10 +462,10 @@ function drstk_api_auth_enabled(){
 }
 
 /*DRS API Authenticate helper method*/
-function drstk_drs_auth(){  
+function drstk_drs_auth(){
   if(drstk_api_auth_enabled() == true){
     // Token is only good for one hour
-    
+
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, "https://repository.library.northeastern.edu/api/v1/auth_user");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -477,12 +477,12 @@ function drstk_drs_auth(){
     $headers[] = "Content-Type: application/x-www-form-urlencoded";
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
     $result = curl_exec($ch);
-    
+
     // result should be json
     $data = json_decode($result, true);
-    
+
     $token = $data["auth_token"];
-    
+
     if (!empty($token)) {
       return $token;
     } else {
@@ -584,7 +584,7 @@ function drstk_collection_callback() {
   $collection_pid = (get_option('drstk_collection') != '') ? get_option('drstk_collection') : 'https://repository.library.northeastern.edu/collections/neu:1';
   echo '<input name="drstk_collection" type="text" value="'.$collection_pid.'" style="width:100%;"></input><br/>
      <small>Ie. <a href="https://repository.library.northeastern.edu/collections/neu:6012">https://repository.library.northeastern.edu/collections/neu:6012</a></small>';
-  
+
   if (WP_DEBUG) {
     $commonPidsHtml = "
     <p>Reference PIDs for dev and testing:</p>
@@ -597,7 +597,7 @@ function drstk_collection_callback() {
     ";
     echo $commonPidsHtml;
   }
-  
+
 }
 
 function drstk_home_url_callback() {
@@ -655,7 +655,7 @@ function drstk_podcast_page_callback() {
                             'name' => 'drstk_podcast_page',
                             'id' => 'drstk_podcast_page',
                             'class' => 'drstk_podcast_options'
-                          )         
+                          )
   );
   echo "<p><a href='" . get_page_link($selected, false) . "'>" . get_the_title($selected) .   "</a></p>";
 }
@@ -1039,179 +1039,182 @@ add_action('admin_enqueue_scripts', 'drstk_admin_enqueue');
      return $public_query_vars;
  }
 
-/**
- * This is the hook that will filter our template calls; it searches for the
- * drstk_template_type variable (which we set above) and then makes a
- * decision accordingly.
- */
-add_filter('template_include', 'drstk_content_template', 1, 1);
-function drstk_content_template( $template ) {
-    global $wp_query;
-    global $TEMPLATE;
-    global $TEMPLATE_THEME;
+ /**
+  * This is the hook that will filter our template calls; it searches for the
+  * drstk_template_type variable (which we set above) and then makes a
+  * decision accordingly.
+  */
+ add_filter('template_include', 'drstk_content_template', 1, 1);
+ function drstk_content_template( $template ) {
+     global $wp_query;
+     global $TEMPLATE;
+     global $TEMPLATE_THEME;
 
-    if ( isset($wp_query->query_vars['drstk_template_type']) ) {
+     if ( isset($wp_query->query_vars['drstk_template_type']) ) {
 
-        $template_type = $wp_query->query_vars['drstk_template_type'];
+         $template_type = $wp_query->query_vars['drstk_template_type'];
 
-        if ($template_type == 'browse' || $template_type == 'search' || $template_type == 'collections' || $template_type == 'collection') {
-            global $sub_collection_pid;
-            $sub_collection_pid = get_query_var( 'pid' );
-            add_action('wp_enqueue_scripts', 'drstk_browse_script');
-            if ($template_type == 'collection') {
-              add_action('wp_enqueue_scripts', 'drstk_breadcrumb_script');
-            }
+         if ($template_type == 'browse' || $template_type == 'search' || $template_type == 'collections' || $template_type == 'collection') {
+             global $sub_collection_pid;
+             $sub_collection_pid = get_query_var( 'pid' );
+             add_action('wp_enqueue_scripts', 'drstk_browse_script');
+             if ($template_type == 'collection') {
+               add_action('wp_enqueue_scripts', 'drstk_breadcrumb_script');
+             }
 
-            // look for theme template first, load plugin template as fallback
-            $theme_template = locate_template( array( $TEMPLATE_THEME['browse_template'] ) );
-            return ($theme_template ? $theme_template : $TEMPLATE['browse_template']);
-        } elseif ($template_type == 'item') {
-            global $item_pid;
-            $item_pid = get_query_var('pid');
-            add_action('wp_enqueue_scripts', 'drstk_item_script');
+             // look for theme template first, load plugin template as fallback
+             $theme_template = locate_template( array( $TEMPLATE_THEME['browse_template'] ) );
+             return ($theme_template ? $theme_template : $TEMPLATE['browse_template']);
+         } elseif ($template_type == 'item') {
+             global $item_pid;
+             $item_pid = get_query_var('pid');
+             add_action('wp_enqueue_scripts', 'drstk_item_script');
 
-            // look for theme template first, load plugin template as fallback
-            $theme_template = locate_template( array( $TEMPLATE_THEME['item_template'] ) );
-            return ($theme_template ? $theme_template : $TEMPLATE['item_template']);
-        } elseif ($template_type == 'download') {
-          global $item_pid;
-          $item_pid = get_query_var('pid');
+             // look for theme template first, load plugin template as fallback
+             $theme_template = locate_template( array( $TEMPLATE_THEME['item_template'] ) );
+             return ($theme_template ? $theme_template : $TEMPLATE['item_template']);
+         } elseif ($template_type == 'download') {
+           global $item_pid;
+           $item_pid = get_query_var('pid');
 
-          // look for theme template first, load plugin template as fallback
-          $theme_template = locate_template( array( $TEMPLATE_THEME['download_template'] ) );
-          return ($theme_template ? $theme_template : $TEMPLATE['download_template']);
-        } elseif ($template_type == 'mirador') {
-          add_action('wp_enqueue_scripts', 'drstk_mirador_script');
+           // look for theme template first, load plugin template as fallback
+           $theme_template = locate_template( array( $TEMPLATE_THEME['download_template'] ) );
+           return ($theme_template ? $theme_template : $TEMPLATE['download_template']);
+         } elseif ($template_type == 'mirador') {
+           add_action('wp_enqueue_scripts', 'drstk_mirador_script');
 
-          // look for theme template first, load plugin template as fallback
-          $theme_template = locate_template( array( $TEMPLATE_THEME['mirador_template'] ) );
-          return ($theme_template ? $theme_template : $TEMPLATE['mirador_template']);
-        }
+           // look for theme template first, load plugin template as fallback
+           $theme_template = locate_template( array( $TEMPLATE_THEME['mirador_template'] ) );
+           return ($theme_template ? $theme_template : $TEMPLATE['mirador_template']);
+         }
 
-    } else {
-        return $template;
-    }
-} // end drstk_content_template
+     } else {
+         return $template;
+     }
+ } // end drstk_content_template
 
-/**
- * Load scripts for the browse/search page
- *
- */
-function drstk_browse_script() {
-    global $wp_query;
-    global $sub_collection_pid;
-    $errors = drstk_get_errors();
-    //this enqueues the JS file
-    wp_register_script( 'drstk_browse',
-        plugins_url( '/assets/js/browse.js', __FILE__ ),
-        array( 'jquery' )
-    );
-    wp_enqueue_script('drstk_browse');
-    $search_options = get_option('drstk_search_metadata');
-    $browse_options = get_option('drstk_browse_metadata');
-    $default_sort = get_option('drstk_default_sort');
-    $default_browse_per_page = get_option('drstk_default_browse_per_page');
-    $default_search_per_page = get_option('drstk_default_search_per_page');
-    $default_facet_sort = get_option('drstk_facet_sort_order');
-    $related_content_title = get_option('drstk_search_related_content_title');
-    //this creates a unique nonce to pass back and forth from js/php to protect
-    $browse_nonce = wp_create_nonce( 'browse_drs' );
-    $facets = drstk_get_facets_to_display();
-    $facets_to_display = array();
-    foreach($facets as $facet){
-      $facets_to_display[$facet] = drstk_get_facet_name($facet);
-    }
-    $niec_facets = get_option('drstk_niec_metadata');
-    $niec_facets_to_display = array();
-    if (is_array($niec_facets)){
-      foreach($niec_facets as $facet){
-        $niec_facets_to_display[$facet] = drstk_get_facet_name($facet, true);
-      }
-    }
-    //this allows an ajax call from browse.js
-    $browse_obj = array(
-      'ajax_url' => admin_url('admin-ajax.php'),
-      'nonce'    => $browse_nonce,
+ /**
+  * Load scripts for the browse/search page
+  *
+  */
+ function drstk_browse_script() {
+     global $wp_query;
+     global $VERSION;
+     global $sub_collection_pid;
+     global $errors;
+     //this enqueues the JS file
+     wp_register_script( 'drstk_browse',
+         plugins_url( '/assets/js/browse.js', __FILE__ ),
+         array( 'jquery' )
+     );
+     wp_enqueue_script('drstk_browse');
+     $search_options = get_option('drstk_search_metadata');
+     $browse_options = get_option('drstk_browse_metadata');
+     $default_sort = get_option('drstk_default_sort');
+     $default_browse_per_page = get_option('drstk_default_browse_per_page');
+     $default_search_per_page = get_option('drstk_default_search_per_page');
+     $default_facet_sort = get_option('drstk_facet_sort_order');
+     $related_content_title = get_option('drstk_search_related_content_title');
+     //this creates a unique nonce to pass back and forth from js/php to protect
+     $browse_nonce = wp_create_nonce( 'browse_drs' );
+     $facets = drstk_get_facets_to_display();
+     $facets_to_display = array();
+     foreach($facets as $facet){
+       $facets_to_display[$facet] = drstk_get_facet_name($facet);
+     }
+     $niec_facets = get_option('drstk_niec_metadata');
+     $niec_facets_to_display = array();
+     if (is_array($niec_facets)){
+       foreach($niec_facets as $facet){
+         $niec_facets_to_display[$facet] = drstk_get_facet_name($facet, true);
+       }
+     }
+     //this allows an ajax call from browse.js
+     $browse_obj = array(
+       'ajax_url' => admin_url('admin-ajax.php'),
+       'nonce'    => $browse_nonce,
+       'template' => $wp_query->query_vars['drstk_template_type'],
+       'home_url' => drstk_home_url(),
+       'sub_collection_pid' => $sub_collection_pid,
+       'search_options' => json_encode($search_options),
+       'related_content_title' => $related_content_title,
+       'browse_options' => json_encode($browse_options),
+       'errors' => json_encode($errors),
+       'facets_to_display' => $facets_to_display,
+       'default_sort' => $default_sort,
+       'default_facet_sort' => $default_facet_sort,
+       'default_browse_per_page' => $default_browse_per_page,
+       'default_search_per_page' => $default_search_per_page,
+       'search_show_facets' => get_option('drstk_search_show_facets'),
+       'browse_show_facets' => get_option('drstk_browse_show_facets'),
+     );
+     if (get_option('drstk_niec') == 'on' && count($niec_facets_to_display) > 0){
+       $browse_obj['niec_facets_to_display'] = $niec_facets_to_display;
+     }
+
+     wp_localize_script( 'drstk_browse', 'browse_obj', $browse_obj );
+ }
+
+
+ /**
+  * Load scripts for the doc/page views
+  */
+ function drstk_item_script() {
+     global $VERSION;
+     global $wp_query;
+     global $item_pid;
+     global $errors;
+
+     $item_nonce = wp_create_nonce( 'item_drs' );
+
+     //this enqueues the JS file
+     wp_register_script('drstk_jwplayer', plugins_url('/assets/js/jwplayer/jwplayer.js', __FILE__), array(), $VERSION, false );
+     wp_enqueue_script('drstk_jwplayer');
+     wp_register_script('drstk_elevatezoom',plugins_url('/assets/js/elevatezoom/jquery.elevateZoom-3.0.8.min.js', __FILE__), array());
+     wp_enqueue_script('drstk_elevatezoom');
+     wp_register_script('drstk_item_gallery', plugins_url('/assets/js/item_gallery.js', __FILE__), array(), $VERSION, false );
+     wp_enqueue_script('drstk_item_gallery');
+
+     //this allows an ajax call from browse.js
+     $item_obj = array(
+       'ajax_url' => admin_url('admin-ajax.php'),
+       'nonce'    => $item_nonce,
+       'template' => $wp_query->query_vars['drstk_template_type'],
+       'home_url' => drstk_home_url(),
+     );
+
+     wp_localize_script( 'drstk_item_gallery', 'item_obj', $item_obj );
+ }
+
+ function drstk_breadcrumb_script(){
+   global $wp_query;
+   global $VERSION;
+   global $sub_collection_pid;
+   global $item_pid;
+
+   wp_register_script( 'drstk_breadcrumb',
+       plugins_url( '/assets/js/breadcrumb.js', __FILE__ ),
+       array( 'jquery' )
+   );
+   wp_enqueue_script('drstk_breadcrumb');
+   $breadcrumb_nonce = wp_create_nonce( 'breadcrumb_drs' );
+
+   wp_localize_script( 'drstk_breadcrumb', 'breadcrumb_obj', array(
+      'ajax_url' => admin_url( 'admin-ajax.php' ),
+      'nonce'    => $breadcrumb_nonce,
       'template' => $wp_query->query_vars['drstk_template_type'],
-      'home_url' => drstk_home_url(),
+      'item_pid' => $item_pid,
       'sub_collection_pid' => $sub_collection_pid,
-      'search_options' => json_encode($search_options),
-      'related_content_title' => $related_content_title,
-      'browse_options' => json_encode($browse_options),
-      'errors' => json_encode($errors),
-      'facets_to_display' => $facets_to_display,
-      'default_sort' => $default_sort,
-      'default_facet_sort' => $default_facet_sort,
-      'default_browse_per_page' => $default_browse_per_page,
-      'default_search_per_page' => $default_search_per_page,
-      'search_show_facets' => get_option('drstk_search_show_facets'),
-      'browse_show_facets' => get_option('drstk_browse_show_facets'),
-    );
-    if (get_option('drstk_niec') == 'on' && count($niec_facets_to_display) > 0){
-      $browse_obj['niec_facets_to_display'] = $niec_facets_to_display;
-    }
-
-    wp_localize_script( 'drstk_browse', 'browse_obj', $browse_obj );
-}
-
-
-/**
- * Load scripts for the doc/page views
- */
-function drstk_item_script() {
-    global $wp_query;
-    global $item_pid;
-    
-    $errors = drstk_get_errors();
-    $item_nonce = wp_create_nonce( 'item_drs' );
-
-    //this enqueues the JS file
-    wp_register_script('drstk_cdn_jwplayer', 'https://content.jwplatform.com/libraries/dTFl0VEe.js');
-    wp_enqueue_script('drstk_cdn_jwplayer');
-    wp_register_script('drstk_elevatezoom',plugins_url('/assets/js/elevatezoom/jquery.elevateZoom-3.0.8.min.js', __FILE__), array());
-    wp_enqueue_script('drstk_elevatezoom');
-    wp_register_script('drstk_item_gallery', plugins_url('/assets/js/item_gallery.js', __FILE__));
-    wp_enqueue_script('drstk_item_gallery');
-
-    //this allows an ajax call from browse.js
-    $item_obj = array(
-      'ajax_url' => admin_url('admin-ajax.php'),
-      'nonce'    => $item_nonce,
-      'template' => $wp_query->query_vars['drstk_template_type'],
+      'collection_pid' => drstk_get_pid(),
       'home_url' => drstk_home_url(),
-    );
-
-    wp_localize_script( 'drstk_item_gallery', 'item_obj', $item_obj );
-}
-
-function drstk_breadcrumb_script(){
-  global $wp_query;
-  global $sub_collection_pid;
-  global $item_pid;
-
-  wp_register_script( 'drstk_breadcrumb',
-      plugins_url( '/assets/js/breadcrumb.js', __FILE__ ),
-      array( 'jquery' )
-  );
-  wp_enqueue_script('drstk_breadcrumb');
-  $breadcrumb_nonce = wp_create_nonce( 'breadcrumb_drs' );
-
-  wp_localize_script( 'drstk_breadcrumb', 'breadcrumb_obj', array(
-     'ajax_url' => admin_url( 'admin-ajax.php' ),
-     'nonce'    => $breadcrumb_nonce,
-     'template' => $wp_query->query_vars['drstk_template_type'],
-     'item_pid' => $item_pid,
-     'sub_collection_pid' => $sub_collection_pid,
-     'collection_pid' => drstk_get_pid(),
-     'home_url' => drstk_home_url(),
-  ) );
-}
+   ) );
+ }
 
 function drstk_mirador_script() {
     global $wp_query;
     // this appears unused, but at least it isn't the global it used to be
     $errors = drstk_get_errors();
-    
+
     //this enqueues the JS file
     wp_register_script('drstk_mirador', plugins_url('/assets/mirador/mirador.js', __FILE__));
     wp_enqueue_script('drstk_mirador');
@@ -1233,12 +1236,12 @@ add_action( 'admin_head', 'fix_admin_head' );
 * Basic curl response mechanism.
 * Designed here to make it easy to output some message, even in the case of an error
 * For debugging, the fuller status info is passed along for inspection when needed
-* 
+*
 * Typical usage:
 * $response = get_response($url);
 * $output = $response['output'];
 * echo $output;
-* 
+*
 * Fancier:
 * $response = get_response($url);
 * if ($response['status'] == 404) {
@@ -1256,14 +1259,14 @@ function get_response($url) {
   // @TODO:  when we're up to PHP > 5.5, CURLINFO_HTTP_CODE should be CURLINFO_RESPONSE_CODE
   $response_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 //$response_status = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
-  
+
   //fallback for PHP < 5.5
   // @TODO remove this once our servers are upgraded, so we can keep using modern(ish) PHP practices
   if (! $response_status) {
     $response_status_array = curl_getinfo($ch);
     $response_status = $response_status_array['http_code'];
   }
-  
+
   switch ($response_status) {
     case 200:
       $output = $raw_response;
@@ -1287,7 +1290,7 @@ function get_response($url) {
       $output = 'An unknown error occured.' . $response_status;
       $status_message = 'An unkown error occured. Please try again';
       break;
-      
+
   }
   $response = array(
     'status' => $response_status,
@@ -1421,7 +1424,7 @@ function create_post_type() {
  * without resorting to a global variable
  * @TODO see if this can do the work in drstk_get_facets_to_display
  * @TODO check if we really do need to strip out defaults in some cases
- * 
+ *
  * @param string $facet_type drstk or niec
  * @param boolean $default true to return the defaults, false (default) to return the data from options table
  * @return array
@@ -1440,16 +1443,16 @@ function drstk_facets_get_option($facet_type, $default = false)
                                      "drs_degree_ssim",
                                      "drs_course_number_ssim",
                                      "drs_course_title_ssim");
-      
-      
+
+
       if ($default) {
         return $default_facet_options;
       }
       return get_option('drstk_facets', $default_facet_options);
-      
-      
+
+
       break;
-      
+
     case 'niec':
       $default_niec_facet_options = array("niec_gender_ssim",
                                           "niec_age_ssim",
@@ -1470,14 +1473,14 @@ function drstk_facets_get_option($facet_type, $default = false)
                                           "niec_spoken_language_ssim",
                                           "niec_lends_itself_to_classifiers_ssim",
                                           "niec_lends_itself_to_use_of_space_ssim");
-      
+
       if ($default) {
         return $default_niec_facet_options;
       }
       return get_option('drstk_niec_metadata', $default_niec_facet_options);
-      
+
       break;
-      
+
     default:
       return array();
       break;
@@ -1487,7 +1490,7 @@ function drstk_facets_get_option($facet_type, $default = false)
 
 function drstk_dev_site_status_admin_notice() {
 
-  include('devMessage.php');
+  //include('devMessage.php');
 }
 
 if(WP_DEBUG) {
@@ -1495,11 +1498,11 @@ if(WP_DEBUG) {
 }
 
 
-/* Dev on Podcast site options */ 
+/* Dev on Podcast site options */
 add_filter( 'template_include', 'drstk_podcast_page_template', 100 );
 
 function drstk_podcast_page_template( $template ) {
-  
+
   if (get_option('drstk_is_podcast') != 'on') {
     return $template;
   }
@@ -1514,13 +1517,13 @@ function drstk_podcast_page_template( $template ) {
       $template = dirname( __FILE__ ) . '/templates/' . $file_name;
     }
   }
-  
+
   return $template;
 }
 
 add_action('init', 'drstk_add_podcast_feed');
 function drstk_add_podcast_feed() {
-  
+
   add_feed('podcasts', 'drstk_render_podcast_feed');
 }
 

@@ -397,7 +397,7 @@ function get_associated_files(){
   if (isset($data->associated) && ($data->associated != NULL) && (get_option('drstk_assoc') == 'on')){
     $associated_html = '';
     $title = (get_option('drstk_assoc_title') != '') ? get_option('drstk_assoc_title') : 'Associated Files';
-    $associated_html .= "<div class='panel panel-default assoc_files'><div class='panel-heading'>".$title."</div><div class='panel-body'>";
+    $associated_html .= "<div class='panel panel-default assoc_files'><div class='panel-heading fl-page-bar'>".$title."</div><div class='panel-body'>";
       $assoc_pid = key(get_object_vars($data->associated)); //using this just to get the first title
     $assoc_title = $data->associated->$assoc_pid; //using this just to get the first title
     $url = drstk_api_url("drs", $assoc_pid, "files", NULL, "solr_only=true");
@@ -432,7 +432,7 @@ function get_related_content(){
       } else {
         $pidnum = "dpla:".$item_pid;
       }
-      echo '<div class="panel panel-default related_content"><div class="panel-heading">'.$title.'</div><div class="panel-body">';
+      echo '<div class="panel panel-default related_content"><div class="panel-heading fl-page-bar">'.$title.'</div><div class="panel-body">';
       do_related_content_query($pidnum, 1);
       echo "</div></div>";
     }

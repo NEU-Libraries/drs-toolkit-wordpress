@@ -1307,8 +1307,8 @@ var __module2__ = (function(__dependency1__, __dependency2__) {
         } else {
           for(var key in context) {
             if(context.hasOwnProperty(key)) {
-              if(data) {
-                data.key = key;
+              if(data) { 
+                data.key = key; 
                 data.index = i;
                 data.first = (i === 0);
               }
@@ -1817,9 +1817,9 @@ var __module9__ = (function() {
 
   var $0 = $$.length - 1;
   switch (yystate) {
-  case 1: return new yy.ProgramNode($$[$0-1], this._$);
+  case 1: return new yy.ProgramNode($$[$0-1], this._$); 
   break;
-  case 2: return new yy.ProgramNode([], this._$);
+  case 2: return new yy.ProgramNode([], this._$); 
   break;
   case 3:this.$ = new yy.ProgramNode([], $$[$0-1], $$[$0], this._$);
   break;
@@ -1835,7 +1835,7 @@ var __module9__ = (function() {
   break;
   case 9:this.$ = [$$[$0]];
   break;
-  case 10: $$[$0-1].push($$[$0]); this.$ = $$[$0-1];
+  case 10: $$[$0-1].push($$[$0]); this.$ = $$[$0-1]; 
   break;
   case 11:this.$ = new yy.BlockNode($$[$0-2], $$[$0-1].inverse, $$[$0-1], $$[$0], this._$);
   break;
@@ -1893,7 +1893,7 @@ var __module9__ = (function() {
   break;
   case 38:this.$ = new yy.IdNode($$[$0], this._$);
   break;
-  case 39: $$[$0-2].push({part: $$[$0], separator: $$[$0-1]}); this.$ = $$[$0-2];
+  case 39: $$[$0-2].push({part: $$[$0], separator: $$[$0-1]}); this.$ = $$[$0-2]; 
   break;
   case 40:this.$ = [{part: $$[$0]}];
   break;
@@ -2215,14 +2215,14 @@ var __module9__ = (function() {
                                        this.begin("mu");
                                      }
                                      if(yy_.yytext) return 14;
-
+                                   
   break;
   case 1:return 14;
   break;
   case 2:
                                      this.popState();
                                      return 14;
-
+                                   
   break;
   case 3:strip(0,4); this.popState(); return 15;
   break;
@@ -8940,7 +8940,7 @@ $.EventSource.prototype = {
             touchCount = event.changedTouches.length,
             gPoints = [],
             pointsList = tracker.getActivePointersListByType( 'touch' );
-
+        
         abortTouchContacts( tracker, event, pointsList );
     }
 
@@ -9996,7 +9996,7 @@ $.EventSource.prototype = {
             } );
         }
     }
-
+    
     // True if inside an iframe, otherwise false.
     // @member {Boolean} isInIframe
     // @private
@@ -10008,7 +10008,7 @@ $.EventSource.prototype = {
             return true;
         }
     })();
-
+ 
     // @function
     // @private
     // @inner
@@ -15815,11 +15815,11 @@ $.IIIFTileSource = function( options ){
             options.tileSize = shortDim;
         }
     } else if (this.sizes && this.sizes.length > 0) {
-        // This info.json can't be tiled, but we can still construct a legacy pyramid from the sizes array.
-        // In this mode, IIIFTileSource will call functions from the abstract baseTileSource or the
-        // LegacyTileSource instead of performing IIIF tiling.
+        // This info.json can't be tiled, but we can still construct a legacy pyramid from the sizes array. 
+        // In this mode, IIIFTileSource will call functions from the abstract baseTileSource or the 
+        // LegacyTileSource instead of performing IIIF tiling.      
         this.emulateLegacyImagePyramid = true;
-
+        
         options.levels = constructLevels( this );
         // use the largest available size to define tiles
         $.extend( true, options, {
@@ -15854,7 +15854,7 @@ $.extend( $.IIIFTileSource.prototype, $.TileSource.prototype, /** @lends OpenSea
      * @param {Object|Array} data
      * @param {String} optional - url
      */
-
+     
     supports: function( data, url ) {
         // Version 2.0 and forwards
         if (data.protocol && data.protocol == 'http://iiif.io/api/image') {
@@ -24842,7 +24842,7 @@ var Isfahan = function(configObject) {
     divisor;
     // if not already set, divide equally.
     group.forEach(function(item) {
-      if (!item[dimension] === undefined) {
+      if (!item[dimension] === undefined) { 
         old = true;
       }
     });
@@ -24854,7 +24854,7 @@ var Isfahan = function(configObject) {
         return previousValue[dimension] + currentValue[dimension];
       });
       console.log('sum: ' + sum);
-
+      
       divisor = (node[dimension]/sum)*total;
       console.log("divisor: "+divisor);
       return divisor;
@@ -24886,7 +24886,7 @@ var Isfahan = function(configObject) {
     });
 
     return nodes;
-  }
+  } 
 
   isfahan.size = function(x) {
     if (!arguments.length) return containerSize;
@@ -24943,7 +24943,7 @@ var Isfahan = function(configObject) {
     if (dy < 0) { y += dy / 2; dy = 0; }
     return {x: x, y: y, dx: dx, dy: dy};
   }
-
+  
   function merge(target, source) {
 
     /* Merges two (or more) objects,
@@ -38852,7 +38852,7 @@ Base.exports.PaperScript = (function() {
 				&& PaperScope.getAttribute(script, 'ignore') !== 'true') {
 			var canvasId = PaperScope.getAttribute(script, 'canvas'),
 				canvas = document.getElementById(canvasId),
-				src = script.src || script.getAttribute('src'),
+				src = script.src || script.getAttribute('data-src'),
 				async = PaperScope.hasAttribute(script, 'async'),
 				scopeAttribute = 'data-paper-scope';
 			if (!canvas)
@@ -41248,11 +41248,11 @@ return paper;
     if (this instanceof Mirador) {
         // initialize the event emitter for this mirador instance
         this.eventEmitter = new Mirador.EventEmitter();
-
+  
         // pass the config through the save and restore process,
         // returning the config that will, in fact, populate the application
         this.saveController = new Mirador.SaveController(jQuery.extend(true, {}, config, {'eventEmitter': this.eventEmitter}));
-
+  
         // initialize the application
         this.viewer = new Mirador.Viewer({
             'state': this.saveController,
@@ -42334,7 +42334,7 @@ return paper;
       saveModule = jsonStorageEndpoint.module,
       saveOptions = jsonStorageEndpoint.options;
       this.storageModule = new $[saveModule](saveOptions);
-
+      
       this.bindEvents();
       this.listenForActions();
     },
@@ -42474,7 +42474,7 @@ return paper;
         bindEvents: function() {
             var _this = this;
             //change 'change-layout' to mouseover events rather than click?
-            this.element.find('.change-layout').on('click', function() {
+            this.element.find('.change-layout').on('click', function() { 
               _this.eventEmitter.publish('TOGGLE_WORKSPACE_PANEL');
               //remove active class from other buttons
               _this.element.find('.bookmark-workspace').removeClass('active');
@@ -42485,7 +42485,7 @@ return paper;
               }
             });
 
-            this.element.find('.bookmark-workspace').on('click', function() {
+            this.element.find('.bookmark-workspace').on('click', function() { 
               _this.eventEmitter.publish('TOGGLE_BOOKMARK_PANEL');
               //remove active class from other buttons
               _this.element.find('.change-layout').removeClass('active');
@@ -42947,7 +42947,7 @@ return paper;
 
         var _this = this;
         _this.init();
-
+        
     };
 
     $.ManifestsPanel.prototype = {
@@ -42957,7 +42957,7 @@ return paper;
                 showURLBox : this.state.getStateProperty('showAddFromURLBox')
             })).appendTo(this.appendTo);
             this.manifestListElement = this.element.find('ul');
-
+            
             //this code gives us the max width of the results area, used to determine how many preview images to show
             //cloning the element and adjusting the display and visibility means it won't break the normal flow
             var clone = this.element.clone().css("visibility","hidden").css("display", "block").appendTo(this.appendTo);
@@ -42966,7 +42966,7 @@ return paper;
             this.paddingListElement = this.controlsHeight;
             this.manifestListElement.css("padding-bottom", this.paddingListElement);
             clone.remove();
-
+            
             // this.manifestLoadStatusIndicator = new $.ManifestLoadStatusIndicator({
             //   manifests: this.parent.manifests,
             //   appendTo: this.element.find('.select-results')
@@ -43014,7 +43014,7 @@ return paper;
               _this.resizePanel();
             }, 50, true));
         },
-
+        
         hide: function() {
             var _this = this;
             jQuery(this.element).hide({effect: "fade", duration: 160, easing: "easeOutCubic"});
@@ -43024,17 +43024,17 @@ return paper;
             var _this = this;
             jQuery(this.element).show({effect: "fade", duration: 160, easing: "easeInCubic"});
         },
-
+        
         addManifestUrl: function(url) {
           var _this = this;
           _this.eventEmitter.publish('ADD_MANIFEST_FROM_URL', url, "(Added from URL)");
         },
-
+        
         togglePanel: function(event) {
           var _this = this;
           _this.eventEmitter.publish('TOGGLE_LOAD_WINDOW');
         },
-
+        
         filterManifests: function(value) {
           var _this = this;
           if (value.length > 0) {
@@ -43053,7 +43053,7 @@ return paper;
           clone.remove();
           _this.eventEmitter.publish("manifestPanelWidthChanged", _this.resultsWidth);
         },
-
+        
         onPanelVisible: function(_, stateValue) {
           var _this = this;
           if (stateValue) { _this.show(); return; }
@@ -43062,9 +43062,9 @@ return paper;
 
         onManifestReceived: function(event, newManifest) {
           var _this = this;
-          _this.manifestListItems.push(new $.ManifestListItem({
-            manifest: newManifest,
-            resultsWidth: _this.resultsWidth,
+          _this.manifestListItems.push(new $.ManifestListItem({ 
+            manifest: newManifest, 
+            resultsWidth: _this.resultsWidth, 
             state: _this.state,
             eventEmitter: _this.eventEmitter,
             appendTo: _this.manifestListElement }));
@@ -43134,7 +43134,7 @@ return paper;
       this.element = jQuery(this.template(templateData)).appendTo(this.appendTo);
       var backgroundImage = _this.state.getStateProperty('buildPath') + _this.state.getStateProperty('imagesPath') + 'debut_dark.png';
       this.element.css('background-image','url('+backgroundImage+')').css('background-repeat','repeat');
-
+      
       this.bindEvents();
       this.listenForActions();
     },
@@ -43158,7 +43158,7 @@ return paper;
         var gridString = jQuery(this).data('gridstring');
         _this.hover(gridString);
       });
-
+      
       _this.element.find('.select-grid').on('mouseout', function() {
         _this.reset();
       });
@@ -43185,7 +43185,7 @@ return paper;
       _this.element.find('.grid-instructions').hide();
       _this.element.find('.grid-text').text(gridString).show();
     },
-
+    
     reset: function() {
       var _this = this;
       _this.element.find('.grid-item').removeClass('hovered');
@@ -44140,7 +44140,7 @@ return paper;
     init: function() {
       this.catchOptions = {
         user: {
-          id: this.userid,
+          id: this.userid, 
           name: this.username
         },
         permissions: {
@@ -44182,7 +44182,7 @@ return paper;
           contextId: _this.context_id,
           collectionId: _this.collection_id,
           media: options.media ? options.media : "image",
-          limit: options.limit ? options.limit : -1
+          limit: options.limit ? options.limit : -1 
         },
 
         contentType: "application/json; charset=utf-8",
@@ -44209,9 +44209,9 @@ return paper;
 
       });
     },
-
+    
     deleteAnnotation: function(annotationID, successCallback, errorCallback) {
-      var _this = this;
+      var _this = this;        
       jQuery.ajax({
        url: this.prefix+"/destroy/"+annotationID,
        type: 'DELETE',
@@ -44234,12 +44234,12 @@ return paper;
 
     });
     },
-
+    
     update: function(oaAnnotation, successCallback, errorCallback) {
       var annotation = this.getAnnotationInEndpoint(oaAnnotation),
       _this = this,
       annotationID = annotation.id;
-
+      
       jQuery.ajax({
         url: this.prefix+"/update/"+annotationID,
         type: 'POST',
@@ -44272,7 +44272,7 @@ return paper;
 
     createCatchAnnotation: function(catchAnnotation, successCallback, errorCallback) {
       var _this = this;
-
+      
       jQuery.ajax({
         url: this.prefix+"/create",
         type: 'POST',
@@ -44298,7 +44298,7 @@ return paper;
 
     userAuthorize: function(action, annotation) {
       var token, tokens, _i, _len;
-      //if this is an instructor, they have access to student annotations
+      //if this is an instructor, they have access to student annotations      
       if (this.roles && (this.roles.indexOf('Instructor') !== -1 || this.roles.indexOf('Administrator') !== -1)){
           return true;
       }
@@ -44324,7 +44324,7 @@ return paper;
 
     //Convert Endpoint annotation to OA
     getAnnotationInOA: function(annotation) {
-      var id,
+      var id, 
       motivation = [],
       resource = [],
       on,
@@ -44336,7 +44336,7 @@ return paper;
       if (annotation.tags.length > 0) {
         motivation.push("oa:tagging");
         jQuery.each(annotation.tags, function(index, value) {
-          resource.push({
+          resource.push({      
             "@type":"oa:Tag",
             "chars":value
           });
@@ -44397,7 +44397,7 @@ return paper;
       var annotation = {},
       tags = [],
       text;
-
+      
       if (oaAnnotation["@id"]) {
         annotation.id = oaAnnotation["@id"];
       }
@@ -44405,7 +44405,7 @@ return paper;
       annotation.media = "image";
       jQuery.each(oaAnnotation.resource, function(index, value) {
         if (value['@type'] === 'oa:Tag') {
-          tags.push(value.chars);
+          tags.push(value.chars); 
         } else if (value['@type'] === 'dctypes:Text') {
           text = value.chars;
         }
@@ -44436,8 +44436,8 @@ return paper;
       // annotation.bounds = {"x":regionArray[0], "y":regionArray[1], "width":regionArray[2], "height":regionArray[3]};
 
       annotation.updated = new Date().toISOString();
-      if (oaAnnotation.annotatedAt) {
-        annotation.created = oaAnnotation.annotatedAt;
+      if (oaAnnotation.annotatedAt) { 
+        annotation.created = oaAnnotation.annotatedAt; 
       } else {
         annotation.created = annotation.updated;
       }
@@ -44491,7 +44491,7 @@ return paper;
 
   $.Endpoint.prototype = {
     init: function() {
-      //whatever initialization your endpoint needs
+      //whatever initialization your endpoint needs       
     },
 
     //Search endpoint for all annotations with a given URI in options
@@ -44524,10 +44524,10 @@ return paper;
         }
       });
     },
-
+    
     //Delete an annotation by endpoint identifier
     deleteAnnotation: function(annotationID, successCallback, errorCallback) {
-      var _this = this;
+      var _this = this;        
       jQuery.ajax({
         url: '',
         type: 'DELETE',
@@ -44546,12 +44546,12 @@ return paper;
         }
       });
     },
-
+    
     //Update an annotation given the OA version
     update: function(oaAnnotation, successCallback, errorCallback) {
       var annotation = this.getAnnotationInEndpoint(oaAnnotation),
       _this = this;
-
+      
       jQuery.ajax({
         url: '',
         type: 'POST',
@@ -44576,7 +44576,7 @@ return paper;
     //if successful, MUST return the OA rendering of the annotation
     create: function(oaAnnotation, successCallback, errorCallback) {
       var _this = this;
-
+      
       jQuery.ajax({
         url: '',
         type: 'POST',
@@ -44640,7 +44640,7 @@ return paper;
       token:     null,
       prefix:    null,
       dfd:       null,
-      annotationsList: [],
+      annotationsList: [],        
       windowID: null,
       eventEmitter: null
     }, options);
@@ -44684,11 +44684,11 @@ return paper;
         }
       }
     },
-
+    
     deleteAnnotation: function(annotationID, successCallback, errorCallback) {
       var _this = this,
       key = _this.annotationsList[0].on.full;
-
+      
       try {
         //find the matching annotation in the array and update it
         _this.annotationsList = jQuery.grep(_this.annotationsList, function(value, index) {
@@ -44709,22 +44709,22 @@ return paper;
 
         if (typeof successCallback === "function") {
           successCallback();
-        }
+        } 
       } catch (e) {
         if (typeof errorCallback === "function") {
           errorCallback();
-        }
+        } 
       }
     },
-
+    
     update: function(oaAnnotation, successCallback, errorCallback) {
       var _this = this,
       key = oaAnnotation.on.full,
       annotationID = oaAnnotation['@id'];
-
+      
       try {
         if (_this.annotationsList.length === 0) {
-          _this.annotationsList = _this.getAnnotationList(key);
+          _this.annotationsList = _this.getAnnotationList(key);          
         }
         //find the matching annotation in the array and update it
         jQuery.each(_this.annotationsList, function(index, value) {
@@ -44748,11 +44748,11 @@ return paper;
 
         if (typeof successCallback === "function") {
           successCallback(oaAnnotation);
-        }
+        } 
       } catch (e) {
         if (typeof errorCallback === "function") {
           errorCallback();
-        }
+        } 
       }
     },
 
@@ -44764,7 +44764,7 @@ return paper;
 
       try {
         if (_this.annotationsList.length === 0) {
-          _this.annotationsList = _this.getAnnotationList(key);
+          _this.annotationsList = _this.getAnnotationList(key);          
         }
         oaAnnotation["@id"] = $.genUUID();
         _this.annotationsList.push(oaAnnotation);
@@ -44783,11 +44783,11 @@ return paper;
 
         if (typeof successCallback === "function") {
           successCallback(oaAnnotation);
-        }
+        } 
       } catch (e) {
         if (typeof errorCallback === "function") {
           errorCallback();
-        }
+        } 
       }
     },
 
@@ -46951,7 +46951,7 @@ return paper;
         }
       }
     },
-
+    
     onHover:function(activate,shape,hoverColor){
       // shape needs to have hovered styles
       if(activate && !shape.data.hovered){
@@ -47723,14 +47723,14 @@ return paper;
 }(Mirador));
 
 /*
- * Edited version of https://github.com/IIIF/mirador/blob/9e3c6bbb894e044d01ad51aae1b70309939de5a9/js/src/annotations/catchEndpoint.js
+ * Edited version of https://github.com/IIIF/mirador/blob/9e3c6bbb894e044d01ad51aae1b70309939de5a9/js/src/annotations/catchEndpoint.js 
  * This module tries to store the annotation as is in a RDF store but some fiddeling is required. Fidles are:
- *
+ * 
  * - delete annotation fails if id has a / in it so have to send sanatised ids to mirador
  * - mirador requires an endpoint variable in the annotation pointing to this class.
- *
+ * 
  * Note: this endpoint doesn't currently support authentication, just returns allow all
- *
+ * 
  * All Endpoints need to have at least the following:
  * annotationsList - current list of OA Annotations
  * dfd - Deferred Object
@@ -47740,7 +47740,7 @@ return paper;
  * update(oaAnnotation, returnSuccess, returnError)
  * deleteAnnotation(annotationID, returnSuccess, returnError) (delete is a reserved word)
  * TODO:
- * There is a bug in that if you create an annotation and then delete it (without moving pages) then click either the write annotation button
+ * There is a bug in that if you create an annotation and then delete it (without moving pages) then click either the write annotation button 
  * or try to create a new annotation the deleted annotation re-appears. Changing pages fixes the issue as the annoation is delete from the annotation store
  *
  */
@@ -47766,7 +47766,7 @@ return paper;
     init: function() {
       this.catchOptions = {
         user: {
-          id: this.userid,
+          id: this.userid, 
           name: this.username
         },
         permissions: {
@@ -48234,13 +48234,13 @@ return paper;
 
           _this.eventEmitter.publish('ADD_WINDOW', windowConfig);
 
-        }
-
+        } 
+        
         else if (typeof imageInfoUrl !== 'undefined') {
           if (!_this.state.getStateProperty('manifests')[imageInfoUrl]) {
             _this.eventEmitter.publish('ADD_MANIFEST_FROM_URL', imageInfoUrl, "(Added from URL)");
           }
-        }
+        } 
         else if (typeof collectionUrl !== 'undefined'){
           jQuery.getJSON(collectionUrl).done(function (data, status, jqXHR) {
             if (data.hasOwnProperty('manifests')){
@@ -48252,11 +48252,11 @@ return paper;
             }
           });
 
-          //TODO:
+          //TODO: 
           //this works;
           //but you might want to check if some "publish" action would be better
           _this.addItem();
-
+          
         }
         else {
           if (!_this.state.getStateProperty('manifests')[imageInfoUrl]) {
@@ -51518,7 +51518,7 @@ bindEvents: function() {
         _this.appendTo.find(".layersPanel").remove();
       }
       this.element = jQuery(_this.template(templateData)).appendTo(_this.appendTo);
-
+      
       _this.bindEvents();
 
 
@@ -51735,7 +51735,7 @@ bindEvents: function() {
         if (this.panel) {
             element = element.parent();
         }
-        element.hide({effect: "slide", direction: "right", duration: 300, easing: "swing"});
+        element.hide({effect: "slide", direction: "right", duration: 300, easing: "swing"});    
     },
 
     addLinksToUris: function(text) {
@@ -51814,11 +51814,11 @@ bindEvents: function() {
       panel:                false,
       lazyLoadingFactor:    1.5  //should be >= 1
     }, options);
-
+    
     jQuery.extend($.ScrollView.prototype, $.ThumbnailsView.prototype);
     this.init();
   };
-
+  
 }(Mirador));
 
 (function($) {
@@ -51851,7 +51851,7 @@ bindEvents: function() {
             name : 'toc',
             options : {
               available: _this.tocTabAvailable,
-              id:'tocTab',
+              id:'tocTab', 
               label:'Index'
             }
           },
@@ -51859,7 +51859,7 @@ bindEvents: function() {
            name : 'annotations',
            options : {
            available: _this.annotationsTabAvailable,
-           id:'annotationsTab',
+           id:'annotationsTab', 
            label:'Annotations'
            }
            },*/
@@ -51867,7 +51867,7 @@ bindEvents: function() {
             name : 'layers',
             options : {
               available: _this.layersTabAvailable,
-              id:'layersTab',
+              id:'layersTab', 
               label:'Layers'
             }
           },
@@ -51875,7 +51875,7 @@ bindEvents: function() {
            name : 'tools',
            options : {
            available: _this.toolsTabAvailable,
-           id:'toolsTab',
+           id:'toolsTab', 
            label:'Tools'
            }
            }*/
@@ -52036,11 +52036,11 @@ bindEvents: function() {
       if (!enableSidePanel) {
         jQuery(this.appendTo).hide();
         _this.eventEmitter.publish('ADD_CLASS.'+this.windowId, 'focus-max-width');
-        _this.eventEmitter.publish('HIDE_ICON_TOC.'+this.windowId);
+        _this.eventEmitter.publish('HIDE_ICON_TOC.'+this.windowId);                
       } else {
         jQuery(this.appendTo).show({effect: "fade", duration: 300, easing: "easeInCubic"});
         _this.eventEmitter.publish('REMOVE_CLASS.'+this.windowId, 'focus-max-width');
-        _this.eventEmitter.publish('SHOW_ICON_TOC.'+this.windowId);
+        _this.eventEmitter.publish('SHOW_ICON_TOC.'+this.windowId);                
       }
     }
   };
@@ -52145,15 +52145,15 @@ bindEvents: function() {
                     return value.options.available;
                 });
                 renderingData.tabs = tabs;
-                if(renderingData.tabs.length === 1){
+                if(renderingData.tabs.length === 1){                    
                     // TODO: temporary logic to minimize side panel if only tab is toc and toc is empty
                     if (renderingData.tabs[0].name === 'toc' && !_this.hasStructures) {
                         _this.eventEmitter.publish("sidePanelVisibilityByTab." + _this.windowId, false);
                     }
 
                     // don't show button if only one tab
-                    renderingData.tabs = [];
-                }
+                    renderingData.tabs = []; 
+                } 
                 //TODO: add text if there is one label or no content within this tab
                 this.element = jQuery(_this.template(renderingData)).prependTo(_this.appendTo);
                 return;
@@ -52308,8 +52308,8 @@ bindEvents: function() {
     },
 
     toggle: function(stateValue) {
-      if (stateValue) {
-        this.show();
+      if (stateValue) { 
+        this.show(); 
       } else {
         this.hide();
       }
@@ -52894,14 +52894,14 @@ bindEvents: function() {
     }, config);
     this.emitterId = $.EventEmitter.nextId();
   };
-
+  
   $.EventEmitter.debug = false;
   $.EventEmitter.id = 0;
   $.EventEmitter.nextId = function() {
     $.EventEmitter.id++;
     return $.EventEmitter.id;
   };
-
+  
   ['subscribe', 'unsubscribe', 'publish'].forEach(function(action) {
     $.EventEmitter.prototype[action] = function() {
       var args = Array.prototype.slice.call(arguments);
@@ -53009,8 +53009,8 @@ bindEvents: function() {
 
 	var path = JSONBLOB_API_ENDPOINT;
 
-        // If the body is a string, this is a blob GET operation,
-	// otherwise it's a POST
+        // If the body is a string, this is a blob GET operation, 
+	// otherwise it's a POST	
         if ( typeof body === 'string' || body instanceof String ){
 		path += '/' + body;
 	}
@@ -53077,7 +53077,7 @@ bindEvents: function() {
 
 
 (function($) {
-
+  
   $.JsonLd = {
     getTextValue: function(propertyValue, language) {
       if (typeof language === 'undefined') { language = "en"; }
@@ -53100,7 +53100,7 @@ bindEvents: function() {
       }
     }
   };
-
+  
 }(Mirador));
 
 /* Local fake JsonBlob endpoint */
@@ -53117,7 +53117,7 @@ bindEvents: function() {
         });
         return uuid;
     }
-
+    
     $.LocalJSONBlobAPI = function(opts) {
           this.options = {
               storage: window.localStorage
@@ -53158,7 +53158,7 @@ bindEvents: function() {
       }, options)
 
     );
-
+    
     return osd;
 
   };
@@ -53575,7 +53575,7 @@ bindEvents: function() {
     return thumbnailUrl;
   };
 
-  /*
+  /* 
      miscellaneous utilities
      */
 
@@ -53710,17 +53710,17 @@ bindEvents: function() {
     // Javascript does not have range expansions quite yet,
     // long live the humble for loop.
     // Use a closure to contain the column and row variables.
-    for (var i = 0, c = columns; i < c; i++) {
+    for (var i = 0, c = columns; i < c; i++) { 
       var column = { type: 'column'};
 
       if (rowsPerColumn > 1) {
         column.children = [];
-        for (var j = 0, r = rowsPerColumn; j < r; j++) {
+        for (var j = 0, r = rowsPerColumn; j < r; j++) { 
           column.children.push({
             type: 'row'
           });
         }
-      }
+      } 
 
       layoutDescription.children.push(column);
     }

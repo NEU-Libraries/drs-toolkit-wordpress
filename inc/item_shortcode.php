@@ -41,7 +41,9 @@ function drstk_item( $atts ){
     $data->mods = new StdClass;
     $data->mods->Title = $data->title_info_title_tesim;
     $abs = "Abstract/Description";
-    $data->mods->$abs = $data->abstract_tesim;
+    if (isset($data->abstract_tesim)){
+      $data->mods->$abs = $data->abstract_tesim;
+    }
     if (isset($data->creator_tesim)){
       $data->mods->Creator = $data->creator_tesim;
     }
