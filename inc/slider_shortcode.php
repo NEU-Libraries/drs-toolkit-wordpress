@@ -74,7 +74,7 @@ function drstk_gallery( $atts ){
            if (isset($meta['sizes']['large'])){
              $thumbnail = $thumb_base."/".$meta['sizes']['large']['file'];
            } else {
-             $thumbnail = drstk_home_url()."wp-content/uploads/".$meta['file'];
+             $thumbnail = drstk_home_url()."/wp-content/uploads/".$meta['file'];
            }
            break;
 
@@ -82,7 +82,7 @@ function drstk_gallery( $atts ){
            if (isset($meta['sizes']['large'])){
              $thumbnail = $thumb_base."/".$meta['sizes']['large']['file'];
            } else {
-             $thumbnail = drstk_home_url()."wp-content/uploads/".$meta['file'];
+             $thumbnail = drstk_home_url()."/wp-content/uploads/".$meta['file'];
            }
            break;
        }
@@ -262,13 +262,6 @@ function drstk_gallery_shortcode_scripts() {
         DRS_PLUGIN_URL . '/assets/js/gallery.js',
         array( 'jquery' ));
     wp_enqueue_script('drstk_gallery');
-    wp_enqueue_script( 'ceres-all-js',
-        DRS_PLUGIN_URL .  '/assets/js/ceres-and-plugins.js', array(
-      'jquery',
-      'masonry'
-    ) );
-    wp_register_style('drstk_item_gallery_style',  DRS_PLUGIN_URL . '/assets/css/plugins-all.min.css');
-    wp_enqueue_style('drstk_item_gallery_style');
 	}
 }
 add_action( 'wp_enqueue_scripts', 'drstk_gallery_shortcode_scripts');

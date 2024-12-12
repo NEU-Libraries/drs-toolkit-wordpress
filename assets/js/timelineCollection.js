@@ -77,7 +77,7 @@ jQuery(document).ready(function ($) {
                         }
                         i++;
                     });
-                    facet_modal = '<button type="button" class="wp-button" data-toggle="modal" data-target="#drs_modal_' + facet + '">More ' + facet_name + 's</button><div class="modal fade" id="drs_modal_' + facet + '"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">All ' + facet_name + 's</h4></div><div class="modal-body">' + facet_modal_vals + '</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div><!-- /.modal-content --></div><!-- /.modal-dialog --></div><!-- /.modal -->';
+                    facet_modal = '<button type="button" class="themebutton btn btn-more" data-toggle="modal" data-target="#drs_modal_' + facet + '">More ' + facet_name + 's</button><div class="modal fade" id="drs_modal_' + facet + '"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">All ' + facet_name + 's</h4></div><div class="modal-body">' + facet_modal_vals + '</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div><!-- /.modal-content --></div><!-- /.modal-dialog --></div><!-- /.modal -->';
                     facet_html += "<div id='drs_" + facet + "' class='drs-facet'><div class='panel panel-default'><div class='panel-heading'><b class='drs-facet-name'>" + facet_name + "</b></div><div class='panel-body'>" + facet_values;
                     if (Object.keys(data.facet_fields[facet]).length > 5) {
                         facet_html += facet_modal;
@@ -103,10 +103,10 @@ jQuery(document).ready(function ($) {
             params1.f[facet] = facet_val;
             selectedItem.push(facet_val);
             if($("#timelineLoadingElement").length <= 0) {
-                jQuery(".entry-header").append("<div id='timelineLoadingElement' class='wp-button'>Loading Timeline Items...</div>");
+                jQuery(".entry-header").append("<div id='timelineLoadingElement' class='themebutton btn btn-more'>Loading Timeline Items...</div>");
             }
             reloadTimeline(facets_info_data_obj, atts, params1, post_id);
-            jQuery("#drs-selection").append("<a class='wp-button' href='#' data-type='f' data-facet='" + facet + "' data-val='" + facet_val + "'>" + titleize_1(facet) + " > " + facet_val + " <span class='fa fa-close'></span></a>");
+            jQuery("#drs-selection").append("<a class='themebutton btn btn-more' href='#' data-type='f' data-facet='" + facet + "' data-val='" + facet_val + "'>" + titleize_1(facet) + " > " + facet_val + " <span class='fa fa-close'></span></a>");
             clickable_1();
         });
     }
@@ -124,10 +124,10 @@ jQuery(document).ready(function ($) {
                 params1["page_no"] = 1;
                 params1["q"] = search;
                 $("#drs-selection a[data-type='q']").remove();
-                $("#drs-selection").append("<a class='wp-button' href='#' data-type='q' data-val='" + search + "'>" + search + " <span class='fa fa-close'></span></a>");
+                $("#drs-selection").append("<a class='themebutton btn btn-more' href='#' data-type='q' data-val='" + search + "'>" + search + " <span class='fa fa-close'></span></a>");
                 reloadTimeline(facets_info_data_obj, atts, params1, post_id);
                 if($("#timelineLoadingElement").length <= 0) {
-                    jQuery(".entry-header").append("<div id='timelineLoadingElement' class='wp-button'>Loading Timeline Items...</div>");
+                    jQuery(".entry-header").append("<div id='timelineLoadingElement' class='themebutton btn btn-more'>Loading Timeline Items...</div>");
                 }
                 clickable_1();
             }
@@ -143,10 +143,10 @@ jQuery(document).ready(function ($) {
             params1["page_no"] = 1;
             params1["q"] = search;
             $("#drs-selection a[data-type='q']").remove();
-            $("#drs-selection").append("<a class='wp-button' href='#' data-type='q' data-val='" + search + "'>" + search + " <span class='fa fa-close'></span></a>");
+            $("#drs-selection").append("<a class='themebutton btn btn-more' href='#' data-type='q' data-val='" + search + "'>" + search + " <span class='fa fa-close'></span></a>");
             reloadTimeline(facets_info_data_obj, atts, params1, post_id);
             if($("#timelineLoadingElement").length <= 0) {
-                jQuery(".entry-header").append("<div id='timelineLoadingElement' class='wp-button'>Loading Timeline Items...</div>");
+                jQuery(".entry-header").append("<div id='timelineLoadingElement' class='themebutton btn btn-more'>Loading Timeline Items...</div>");
             }
             clickable_1();
         }
@@ -261,7 +261,7 @@ jQuery(document).ready(function ($) {
             $(this).remove();
             params1["page_no"] = 1;
             if($("#timelineLoadingElement").length <= 0) {
-                jQuery(".entry-header").append("<div id='timelineLoadingElement' class='wp-button'>Loading Timeline Items...</div>");
+                jQuery(".entry-header").append("<div id='timelineLoadingElement' class='themebutton btn btn-more'>Loading Timeline Items...</div>");
             }
             reloadTimeline(facets_info_data_obj, atts, params1, post_id);
             //clickable_1();

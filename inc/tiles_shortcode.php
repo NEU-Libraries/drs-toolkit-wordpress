@@ -14,7 +14,7 @@ function drstk_tiles( $atts ){
       ) {
           return $cache;
   }
-      
+
   $imgs = array_map('trim', explode(',', $atts['id']));
   $img_html = "";
   if (isset($atts['image-size'])){

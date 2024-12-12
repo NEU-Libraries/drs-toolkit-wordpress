@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
     if(collectionSet == "checked"){
     //do this only for collection_id (PUT CHECK)
     reloadRemainingMap(map_obj, params, post_id, 2);
-    jQuery(".entry-header").append("<div id='mapLoadingElement' class='wp-button'>Loading Remaining Map Items...</div>");
+    jQuery(".entry-header").append("<div id='mapLoadingElement' class='themebutton btn btn-more'>Loading Remaining Map Items...</div>");
     }
 });
 

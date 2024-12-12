@@ -9,6 +9,7 @@ function reload_filtered_set_timeline_ajax_handler()
     }
     else if($_POST['reloadWhat'] == "facetReload") {
         if (isset($_POST['atts']['collection_id'])) {
+          // @TODO
           $test = get_response("https://repository.library.northeastern.edu/api/v1/search/".$_POST['atts']['collection_id']);
           $test = json_decode($test);
           $url = drstk_api_url("drs", $_POST['atts']['collection_id'], "search", "date", "per_page=".count($test->pagination->table->total_count));
@@ -20,9 +21,8 @@ function reload_filtered_set_timeline_ajax_handler()
           if (isset($_POST['params']['q']) && $_POST['params']['q'] != ''){
               $url .= "&q=". urlencode(sanitize_text_field($_POST['params']['q']));
           }
-          $data1 = get_response($url);
-          $data1 = json_decode($data1);
-          $facets_info_data = $data1;
+          $response = get_response($url);
+          $facets_info_data = json_decode($response['output']);
           wp_send_json($facets_info_data);
         }
     }
@@ -44,7 +44,7 @@ function reloadRemainingTimeline_ajax_handler()
 
 add_shortcode( 'drstk_timeline', 'drstk_timeline' );
 function drstk_timeline( $atts, $params ){
-    global $errors;
+  $errors = drstk_get_errors();
 
   $cache = get_transient(md5('PREFIX'.serialize($atts)));
   if($cache != NULL
@@ -77,7 +77,8 @@ function drstk_timeline( $atts, $params ){
     $current_color_code_id_values = array();
     $current_color_legend_desc_values = array();
     $index_color_pair = array();
-    $facet_options = array("creator_sim","creation_year_sim","subject_sim","type_sim","drs_department_ssim", "drs_degree_ssim", "drs_course_number_ssim", "drs_course_title_ssim");
+    $facet_options = drstk_facets_get_option('drstk', true);
+    
     foreach($color_codes as $color_code=>$color_code_values){
         //$current_color_code_id_string = $color_code . "_id";
         //$current_color_legend_desc_string = $color_code . "_desc";
@@ -111,6 +112,7 @@ function drstk_timeline( $atts, $params ){
 
     $collectionCheck =null;
     if(isset($atts['collection_id'])){
+      // @TODO
       $test = get_response("https://repository.library.northeastern.edu/api/v1/search/".$atts['collection_id']);
       $test = json_decode($test);
 
@@ -130,9 +132,8 @@ function drstk_timeline( $atts, $params ){
             $url .= "&page=" . $params['page_no'];
          }
 
-        $data1 = get_response($url);
-        $data1 = json_decode($data1);
-        $facets_info_data = $data1;
+        $response = get_response($url);
+        $facets_info_data = json_decode($response['output']);
         $num_pages = $data1->pagination->table->num_pages;
 
         if($num_pages == 0){
@@ -159,8 +160,8 @@ function drstk_timeline( $atts, $params ){
         if ($repo != "drs"){$pid = explode(":",$neu_id); $pid = $pid[1];} else {$pid = $neu_id;}
         if($repo == "drs"){
             $url = drstk_api_url("drs", $neu_id, "files", NULL, "solr_only=true");
-            $data = get_response($url);
-            $data = json_decode($data);
+            $response = get_response($url);
+            $data = json_decode($response['output']);
 
             if (!isset($data->error)){
                 $data = $data->_source;
@@ -254,8 +255,8 @@ function drstk_timeline( $atts, $params ){
         if ($repo == "dpla"){
             if (!isset($timeline_custom_html)){$timeline_custom_html = "";}
             $url = drstk_api_url("dpla", $pid, "items");
-            $data = get_response($url);
-            $data = json_decode($data);
+            $response = get_response($url);
+            $data = json_decode($response['output']);
             if (isset($data->docs[0]->object)){
                 $url = $data->docs[0]->object;
             } else {
@@ -417,10 +418,9 @@ function drstk_timeline( $atts, $params ){
     $cache_output = $shortcode;
     $cache_time = 1000;
     set_transient(md5('PREFIX'.serialize($atts)) , $cache_output, $cache_time * 60);
-    global $DRS_PLUGIN_URL;
 
     if(isset($atts['collection_id'])) {
-        wp_register_script('drstk_timelineCollection', $DRS_PLUGIN_URL . '/assets/js/timelineCollection.js', array('jquery'));
+        wp_register_script('drstk_timelineCollection', DRS_PLUGIN_URL . '/assets/js/timelineCollection.js', array('jquery'));
         wp_enqueue_script('drstk_timelineCollection');
 
         $reload_filtered_set_drs_nonce = wp_create_nonce('reload_filtered_set_drs');
@@ -451,18 +451,18 @@ function drstk_timeline( $atts, $params ){
 
 
 function drstk_timeline_shortcode_scripts() {
-    global $post, $wp_query, $DRS_PLUGIN_URL;
+    global $post, $wp_query;
 
     if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'drstk_timeline') && !isset($wp_query->query_vars['drstk_template_type']) ) {
-		wp_register_script( 'drstk_timelinejs',
-        DRS_PLUGIN_URL . '/assets/js/timeline/timeline.js',
-        array( 'jquery' ));
+        wp_register_script( 'drstk_timelinejs',
+            'https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js',
+            array( 'jquery' ));
         wp_enqueue_script('drstk_timelinejs');
-		wp_register_style('drstk_timelinejs_css',  DRS_PLUGIN_URL . '/assets/css/timeline.css');
-        wp_enqueue_style( 'drstk_timelinejs_css');
-		wp_register_script( 'drstk_timelinepage',
-        DRS_PLUGIN_URL . '/assets/js/timelinepage.js',
-        array( 'jquery' ));
+        wp_register_style( 'drstk_cdn_timeline_css', 'https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css');
+        wp_enqueue_style( 'drstk_cdn_timeline_css');
+        wp_register_script( 'drstk_timelinepage',
+            DRS_PLUGIN_URL . '/assets/js/timelinepage.js',
+            array( 'jquery' ));
         wp_enqueue_script('drstk_timelinepage');
 
         $collectionSet = "";

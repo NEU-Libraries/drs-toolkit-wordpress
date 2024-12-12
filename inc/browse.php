@@ -6,6 +6,7 @@ function browse_ajax_handler() {
   $errors = drstk_get_errors();
   check_ajax_referer( 'browse_drs' );
   $collection = drstk_get_pid();
+
   if ($collection == '' || $collection == NULL) {
       $data = array('error'=>$errors['search']['missing_collection']);
       $data = json_encode($data);
@@ -58,10 +59,10 @@ function ajax_wp_search(){
   $query_string = isset($_GET['query']) ? $_GET['query'] : "";
   $paged = $_GET['page'];
   if (isset($_GET['query']) && $query_string != ''){
-    $query_args = array( 'q' => $query_string, 'post_type'=>array('post', 'page'), 'posts_per_page'=>3, 'paged'=>$paged, 'post_status'=>'publish');
+    $query_args = array( 's' => $query_string, 'post_type'=>array('post', 'page'), 'posts_per_page'=>3, 'paged'=>$paged, 'post_status'=>'publish');
     $wp_query = new WP_Query( $query_args );
-    $rel_query = the_search_query($wp_query);
-    if (isset($rel_query) > 0){
+    $rel_query = relevanssi_do_query($wp_query);
+    if (count($rel_query) > 0){
       foreach($rel_query as $r_post){
         $post = $r_post;
         $the_post = $post;
