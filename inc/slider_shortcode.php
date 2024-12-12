@@ -14,7 +14,7 @@ function drstk_gallery( $atts ){
       ) {
           return $cache;
   }
-      
+
   if (isset($atts['id'])){
     $images = array_map('trim', explode(',', $atts['id']));
     $img_html = '';
@@ -38,13 +38,13 @@ function drstk_gallery( $atts ){
      if ($repo == "drs"){
        $url = drstk_api_url("drs", $id, "files", NULL, "solr_only=true");
        $response = get_response($url);
-       
+
        $data = json_decode($response['output']);
-       
+
        $data = $data->_source;
        $thumbnail = "https://repository.library.northeastern.edu".$data->fields_thumbnail_list_tesim[$num];
      }
-     
+
      if ($repo == "wp"){
        $post = get_post($pid);
        $data = new StdClass;
@@ -53,13 +53,13 @@ function drstk_gallery( $atts ){
        $thumb_base = explode("/",$thumb_base);
        $arr = array_pop($thumb_base);
        $thumb_base = implode("/", $thumb_base);
-       
+
        // @TODO $num refers to the image size from the settings tab. a problem area for refactoring
        switch ($num) {
          case 1:
            $thumbnail = $thumb_base."/".$meta['sizes']['thumbnail']['file'];
            break;
-           
+
          case 2:
          case 3:
            // small uploads don't get a medium derivative, so provide a fallback to thumbnail
@@ -69,20 +69,20 @@ function drstk_gallery( $atts ){
              $thumbnail = $thumb_base."/".$meta['sizes']['thumbnail']['file'];
            }
            break;
-           
+
          case 4:
            if (isset($meta['sizes']['large'])){
              $thumbnail = $thumb_base."/".$meta['sizes']['large']['file'];
            } else {
-             $thumbnail = drstk_home_url()."/wp-content/uploads/".$meta['file'];
+             $thumbnail = drstk_home_url()."wp-content/uploads/".$meta['file'];
            }
            break;
-           
+
          case 5:
            if (isset($meta['sizes']['large'])){
              $thumbnail = $thumb_base."/".$meta['sizes']['large']['file'];
            } else {
-             $thumbnail = drstk_home_url()."/wp-content/uploads/".$meta['file'];
+             $thumbnail = drstk_home_url()."wp-content/uploads/".$meta['file'];
            }
            break;
        }
@@ -118,7 +118,7 @@ function drstk_gallery( $atts ){
        if (isset ($dpla->docs[0]->sourceResource->date)) {
          $data->date_ssi = $dpla->docs[0]->sourceResource->date->displayDate;
        }
-       
+
      }
        if (!isset($data->error)){
         $pid = $id;
@@ -262,6 +262,13 @@ function drstk_gallery_shortcode_scripts() {
         DRS_PLUGIN_URL . '/assets/js/gallery.js',
         array( 'jquery' ));
     wp_enqueue_script('drstk_gallery');
+    wp_enqueue_script( 'ceres-all-js',
+        DRS_PLUGIN_URL .  '/assets/js/ceres-and-plugins.js', array(
+      'jquery',
+      'masonry'
+    ) );
+    wp_register_style('drstk_item_gallery_style',  DRS_PLUGIN_URL . '/assets/css/plugins-all.min.css');
+    wp_enqueue_style('drstk_item_gallery_style');
 	}
 }
 add_action( 'wp_enqueue_scripts', 'drstk_gallery_shortcode_scripts');

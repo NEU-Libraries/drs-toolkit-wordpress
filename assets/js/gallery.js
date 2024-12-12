@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
 		if (carousel.data("max-height") > 0){
 			carousel.css("max-height", carousel.data("max-height"));
 			carousel.find(".carousel-inner, .item").css("max-height", carousel.data("max-height"));
-			if (carousel.find(".carousel-caption").css("position") == 'relative'){
+			if (carousel.find(".carousel-caption").css("position") == 'initial'){
 				var img_height = carousel.data("max-height")-carousel.find(".carousel-caption").outerHeight();
 				carousel.find("img").css("max-height", img_height);
 			} else {
@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
 					}
 				});
 			carousel.find("img").css("max-height", height);
-			if (carousel.find(".carousel-caption").css("position") == 'relative'){
+			if (carousel.find(".carousel-caption").css("position") == 'initial'){
 				carousel.find(".carousel-caption").css("min-height", caption_height);
 			}
 		}

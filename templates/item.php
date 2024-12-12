@@ -6,8 +6,8 @@ get_header();
 
 ?>
 <div id="content">
-	<div class="quest-row" id="title-container">
-		<div class="<?php echo apply_filters( 'quest_content_container_cls', 'container' ); ?> title-container">
+	<div class="ceres-row" id="title-container">
+		<div class="<?php echo apply_filters( 'ceres_content_container_cls', 'container' ); ?> title-container">
 			<div class="row">
 				<div class="col-md-6">
 					<h3><?php get_item_title(); ?></h3>
@@ -21,8 +21,8 @@ get_header();
 		</div>
 	</div>
 <?php  $custom_content_placement = drstk_get_custom_content_data('placement'); ?>
-	<div class="quest-row site-content">
-		<div class="<?php echo apply_filters( 'quest_content_container_cls', 'container' ); ?>">
+	<div class="ceres-row site-content">
+		<div class="<?php echo apply_filters( 'ceres_content_container_cls', 'container' ); ?>">
 			<div class="row">
         <noscript>
         <div class="noscript_warning">PLEASE NOTE: JAVASCRIPT IS DISABLED ON YOUR BROWSER. For the best user experience, please enable javascript on your browser now.</div>
@@ -36,7 +36,7 @@ get_header();
                 <?php if ($custom_content_placement == 'top'): ?>
     							<div class="col-sm-12 drs-item-custom">
     								<?php echo drstk_get_custom_content_data('content');?>
-    							</div>                
+    							</div>
                 <?php endif; ?>
 
 								<?php get_item_image(); ?>
@@ -44,7 +44,7 @@ get_header();
 	              <?php if ($custom_content_placement == 'middle'): ?>
     							<div class="col-sm-12 drs-item-custom">
     								<?php echo drstk_get_custom_content_data('content');?>
-    							</div>                
+    							</div>
                 <?php endif; ?>
 
 								<?php get_related_content(); ?>
@@ -57,7 +57,7 @@ get_header();
               <?php if ($custom_content_placement == 'bottom'): ?>
   							<div class="col-sm-12 drs-item-custom">
   							  <?php echo drstk_get_custom_content_data('content');?>
-  							</div>                
+  							</div>
               <?php endif; ?>
 
             </div><!-- #drs-content -->
@@ -71,7 +71,7 @@ get_header();
 		</div>
 		<!-- .container -->
 	</div>
-	<!-- .quest-row -->
+	<!-- .ceres-row -->
 </div><!-- #content -->
 <?php get_footer(); ?>
 <script type="text/javascript">add_google_tracking();</script>

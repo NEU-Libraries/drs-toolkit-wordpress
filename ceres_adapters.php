@@ -52,7 +52,7 @@ function ceres_asset_adapters() {
 	//register scripts
 
 	//datatables
-	wp_register_script('ceres_datatables', plugins_url('//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js'));
+	wp_register_script('ceres_datatables', plugins_url('https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js'));
 
 	//leaflet
 	wp_register_script('ceres_leaflet', plugins_url('/libraries/Ceres/assets/js/leaflet/leaflet1.7.1.js', __FILE__));
