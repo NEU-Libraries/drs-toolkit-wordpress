@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
   if ((q) && (q != '')){
     $("#drs-selection").show();
     $("#drs-selection a[data-type='q']").remove();
-    $("#drs-selection .col-md-10").append("<a class='themebutton btn btn-more' href='#' data-type='q' data-val='"+params.q+"'>"+params.q+" <span class='fa fa-close'></span></a>");
+    $("#drs-selection .results").append("<a class='wp-button' href='#' data-type='q' data-val='"+params.q+"'>"+params.q+" <span class='fa fa-close'></span></a>");
   }
   if (template == 'collections'){
     params.f['type_sim'] = 'Collection';
@@ -101,8 +101,8 @@ jQuery(document).ready(function($) {
 
   //parses pagination data
   function paginate(data){
-    $("#drs-item-count").html("<h6>Displaying " + data.start + " to " + data.end + " of " + data.total_count + "</h6>");
-    $("#drs-per-page-div").html("<h6>Show <select id='drs-per-page'><option val='10'>10</option><option val='20'>20</option><option val='50'>50</option></select> per page</h6>");
+    $("#drs-item-count").html("<p>Displaying " + data.start + " to " + data.end + " of " + data.total_count + "</p>");
+    $("#drs-per-page-div").html("<p>Show <select id='drs-per-page'><option val='10'>10</option><option val='20'>20</option><option val='50'>50</option></select> per page</p>");
     $("#drs-per-page").val(params.per_page);
     $("#drs-sort-option").val(params.sort);
     if (data.num_pages > 1) {
@@ -159,7 +159,7 @@ jQuery(document).ready(function($) {
     }
     $("#drs-facets").html(facet_html);
     $(".drs-facet-toggle").remove();
-    $("#drs-facets").before("<button class='themebutton button btn visible-phone hidden-tablet hidden-desktop drs-facet-toggle hidden-md hidden-lg visible-sm visible-xs'>Show Facets</button>");
+    $("#drs-facets").before("<button class='wp-button visible-phone hidden-tablet hidden-desktop drs-facet-toggle hidden-md hidden-lg visible-sm visible-xs'>Show Facets</button>");
   }//end facetize
 
   function parse_facets(data, object, facet_html){
@@ -196,28 +196,8 @@ jQuery(document).ready(function($) {
           }
           i++;
         });
-        
-        // @TODO: convert this into a template to copy and insert the variables into
-        facet_modal = '<button type="button" ';
-        facet_modal += 'class="themebutton btn btn-more" ';
-        facet_modal += 'data-toggle="modal" ';
-        facet_modal += 'data-target="#drs_modal_'+facet+'">More Options</button>';
-        facet_modal += '<div class="modal fade" id="drs_modal_'+facet+'">';
-        facet_modal += '<div class="modal-dialog"><div class="modal-content"><div class="modal-header">';
-        facet_modal += '<button type="button" class="close" data-dismiss="modal" aria-label="Close">';
-        facet_modal += '<span aria-hidden="true">&times;</span></button>';
-        facet_modal += '<h4 class="modal-title">All '+facet_name+'s</h4></div>';
-        facet_modal += '<div class="modal-body">'+facet_modal_vals+'</div>';
-        facet_modal += '<div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">';
-        facet_modal += 'Close</button></div></div>';
-        facet_modal += '<!-- /.modal-content --></div><!-- /.modal-dialog --></div><!-- /.modal -->';
-        
-        facet_html += "<div id='drs_"+facet+"' class='drs-facet'>";
-        facet_html += "<div class='panel panel-default'><div class='panel-heading'>";
-        facet_html += "<b class='drs-facet-name'>" + facet_name + "</b><";
-        facet_html += "/div><div class='panel-body'>"+facet_values;
-        
-        // @TODO: note that the facet_modal should not be build before we know we need it
+        facet_modal = '<button type="button" class="wp-button" data-toggle="modal" data-target="#drs_modal_'+facet+'">More '+facet_name+'s</button><div class="modal fade" id="drs_modal_'+facet+'"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">All '+facet_name+'s</h4></div><div class="modal-body">'+facet_modal_vals+'</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div><!-- /.modal-content --></div><!-- /.modal-dialog --></div><!-- /.modal -->';
+        facet_html += "<div id='drs_"+facet+"' class='drs-facet'><div class='panel panel-default'><div class='panel-heading fl-page-bar'><b class='drs-facet-name'>" + facet_name + "</b></div><div class='panel-body'>"+facet_values;
         if (Object.keys(data.facet_fields[facet]).length > 5){
           facet_html += facet_modal;
         }
@@ -262,7 +242,7 @@ jQuery(document).ready(function($) {
           this_doc += "<h4 class='drs-item-title'><a href='"+this_doc_url+"'>" + title + "</a></h4>";
         }
         if (creator && search_options.indexOf('Creator') > -1){
-          this_doc += "<h6 class='drs-item-creator'>" + creator.join('; ') + "</h6>";
+          this_doc += "<h6 class='drs-item-creator'>"+ creator + "</h6>";
         }
         if (abstract  && search_options.indexOf('Abstract') > -1){
           this_doc += "<p class='drs-item-abstract'>" + abstract + "</p>";
@@ -270,7 +250,7 @@ jQuery(document).ready(function($) {
         if (date  && search_options.indexOf('Date') > -1){
           this_doc += "<p class='drs-item-date'>" + date + "</p>";
         }
-        this_doc += "<div class=''><a href='"+this_doc_url+"' class='themebutton button btn'>View More</a></div></div></div></div>";
+        this_doc += "<div class=''><a href='"+this_doc_url+"' class='wp-button'>View More</a></div></div></div></div>";
       } else {
         //browse = tile
         this_doc += "<div class='drs-item browse one_third ";
@@ -290,7 +270,7 @@ jQuery(document).ready(function($) {
           this_doc += "<h5 class='drs-item-title'><a href='"+this_doc_url+"'>"+title+"</a></h5>";
         }
         if (creator && browse_options.indexOf('Creator') > -1){
-          this_doc += "<h6 class='drs-item-creator'>" + creator.join('; ') + "</h6>";
+          this_doc += "<h6 class='drs-item-creator'>"+creator+"</h6>";
         }
         if (abstract  && browse_options.indexOf('Abstract') > -1){
           this_doc += "<p class='drs-item-abstract'>"+abstract+"</p>";
@@ -327,6 +307,7 @@ jQuery(document).ready(function($) {
 
     $("#drs-facets a").on("click", function(e){
       e.preventDefault();
+      console.log("clicked");
 
       var facet = $(this).parents('.drs-facet').attr("id");
       if ($(this).parent().hasClass('modal-body')){
@@ -338,16 +319,10 @@ jQuery(document).ready(function($) {
       var facet_val = $(this).children(".drs-facet-val div:first-of-type").html();
       params.f[facet] = facet_val;
 
+      console.log(params);
       params.page = 1;
       $("#drs-selection").show();
-      $("#drs-selection .col-md-10").append("<a class='themebutton btn btn-more' href='#' data-type='f' data-facet='"+facet+"' data-val='"+facet_val+"'>"+titleize(facet)+" > "+facet_val+" <span class='fa fa-close'></span></a>");
-      
-      
-      $([document.documentElement, document.body]).animate(
-          { scrollTop: $("#title-container").offset().top },
-          1500
-      );
-      
+      $("#drs-selection .col-md-10").append("<a class='wp-button' href='#' data-type='f' data-facet='"+facet+"' data-val='"+facet_val+"'>"+titleize(facet)+" > "+facet_val+" <span class='fa fa-close'></span></a>");
       get_data(params);
     });
 
@@ -371,7 +346,7 @@ jQuery(document).ready(function($) {
 
   }
 
-  $("#drs-sort").html("<h6>Sort By: <select id='drs-sort-option'><option value='score+desc%2C+system_create_dtsi+desc'>Relevance</option><option value='title_ssi%20asc'>Title A-Z</option><option value='title_ssi%20desc'>Title Z-A</option><option value='creator_ssi%20asc'>Creator A-Z</option><option value='creator_ssi%20desc'>Creator Z-A</option><option value='system_modified_dtsi%20asc'>Date (earliest to latest)</option><option value='system_modified_dtsi%20desc'>Date (latest to earliest)</option></select></h6>");
+  $("#drs-sort").html("<p>Sort By: <select id='drs-sort-option'><option value='score+desc%2C+system_create_dtsi+desc'>Relevance</option><option value='title_ssi%20asc'>Title A-Z</option><option value='title_ssi%20desc'>Title Z-A</option><option value='creator_tesim%20asc'>Creator A-Z</option><option value='creator_tesim%20desc'>Creator Z-A</option><option value='system_modified_dtsi%20asc'>Date (earliest to latest)</option><option value='system_modified_dtsi%20desc'>Date (latest to earliest)</option></select></p>");
 
   $("#drs-sort-option").on("change", function() {
     params.sort = $(this).val();
@@ -413,6 +388,9 @@ jQuery(document).ready(function($) {
       if (!page){
         page = 1;
       }
+      console.log(browse_obj.ajax_url);
+      console.log(query);
+      console.log(page);
 
       $.ajax({
   			type: 'GET',

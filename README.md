@@ -29,7 +29,7 @@ First, it has a version in git. This will allow for better tracking and debuggin
 
 2. Log in to new Wordpress site as admin user
 
-3. Install Quest theme (go to /wp-admin/theme-install.php and search for quest then click install)
+3. Install Ceres theme (go to /wp-admin/theme-install.php and search for Ceres then click install)
 
 4. SSH into correct directory on server and git clone this repo into wp-content/plugins
 

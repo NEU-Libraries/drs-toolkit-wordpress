@@ -1,0 +1,759 @@
+{
+    "head" : {
+      "vars" : [ "collectionTitle", "collectionTypeLabel", "digitizationStatusLabel", "description" ]
+    },
+    "results" : {
+      "bindings" : [ {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Asian American Resource Workshop records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "The records in this collection document the AARW's civil rights and anti-violence efforts for Asian Americans, and their creation of Asian American educational and cultural resources. It also includes documentation on the SafetyNet Violence Prevention Project and the Sticky Rice Project. Types of documents include minutes, calendars, grant applications, budgets, photographs, comics, etc."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Asian Community Development Corporation (Jacquie L. Kay) records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "The Asian Community Development Corporation's records document the development of affordable housing and assistance for small business development, education, and job training for Asian-Americans in urban areas. The majority of the collection documents two ACDC development projects, Oak Terrace and The Metropolitan, including funding reports, project status reports, and design specifications."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Boston 200 records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Collection of oral histories documenting Chinatown and South End. Oral histories labeled under South End often address individuals and activities in Chinatown. Many of the transcripts of the oral histories are partial and appear to have been edited."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Boston Greenspace Alliance records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This collection includes one folder of materials titled Chinatown, 2004 (box 3, folder 146)."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Boston Urban Gardeners records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This collection includes folders of materials on Chinatown from the 1980s, such as surveys (business, housing, user), reports (land use), plans, maps (Downtown Crossing and Chinatown), and a publication (\"Chinatown 1988: Urban Design for Community Growth\")"
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Carmen Chan's Sampan photos"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "personal collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This collection contains photographs taken by Carmen Chan, a reporter for Chinatown's local newspaper Sampan. The collection contains a large number of black and white photos."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Caroline Chang collection"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This is one of CHSNE's many collections. It currently has not been processed yet, so enquiries should be made to CHSNE for research availability."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cheng Imm Tan papers"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This collection contains audio, videos, pictures, and teaching documents of Gund Kwok, an all-women Asian Lion Dance troupe based in Boston's Chinatown. It also contains some of Cheng Imm Tan's legal and personal documents, such as immigration and travel documents, awards, and family photographs."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Chinatown Story Cart"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "website"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "fully digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This is an art project created 2020-2021. In collaboration with local youth groups like BCNC, CSTO, and ACDC, interviews were collected and visual media was created about the Chinatown community's lives and their experience of the pandemic. It also includes story sets with visual art and reflection activities sent to and collected from the residents. The majority of the collection is digitized."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Chinese American Experiences Mass. Memories Road Show"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "fully digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Chinese American Experiences Mass. Memories Road Show is a digital collection of items (photographs, documents, video interviews) contributed by community members. These materials were collected during a participatory archiving event held at the Pao Arts Center in Chinatown on June 2, 2018."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Chinese American Women Oral History Project"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Collection of oral histories that center around life in China, emigration and settlement in the United States, family life, education, work, ethnic identity, assimilation and acculturation, and continuing ties to China. Primarily consists of audiotapes."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Chinese Consolidated Benevolent Association of New England, Inc. (CCBA) documents"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Collection of primarily physical documents related to Chinatown (minutes, flyers, photos), dating back to the 1980s, including design/architectural drawings for the Chinatown Gate."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Chinese Progressive Association records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "The records in this collection document activism and advocacy in Chinatown and in Greater Boston's Chinese and Asian American community from the 1970's through the 2000's. Materials include administrative print records, public relations records, photo, video, and clippings."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Chinese Women Workers' Oral History Project"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "fully digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This collection contains seven interviews with immigrant women workers who are active leaders around the Chinese Progressive Association and the Asian Pacific American Labor Alliance. Materials included audio and video recordings as well as interview transcripts."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "FayFoto Boston photographs"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Collection of photographs of Boston, including aerial photos of Chinatown."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Harry Hom Dow Papers"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Dow, a son of Chinese immigrants, was raised in Massachusetts during a time when the Chinese Exclusion Act of 1882 was in place and anti-Chinese sentiment and discrimination were common. Despite those challenges, the Suffolk Law School graduate became the first Chinese-American to pass the Massachusetts Bar exam, served in the military, opened a private law practice, and was a noted activist."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Haymarket People's Fund records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This collection includes material on the Chinatown People's Progressive Association from 1978. It also includes undated materials on a Chinatown community mural and on the Chinatown Housing and Land Development Task Force."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Hudson Street Chronicles"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "website"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "born-digital"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This is a collection of photos, stories, and essays on Cynthia Yee's personal website. She explores the themes of what makes for thriving community life and child development, how structural racism oppresses, how feminism can be nurtured, and how social justice can look in America."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "International Society Records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "The International Society originally grew out of the Chinese Economic Development Council in 1979. CEDC's mission was to improve the socio-economic conditions of Boston's Chinese community and support Chinese culture while promoting the city's understanding of that culture. This collection contains textual records and photographs, including newspaper clippings, meeting minutes, and pamphlets."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Jeffrey Wong type sets"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "personal collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This is a personal collection of Yu-Wen Wu, who is in possession of the type sets from the Shanghai Printing Company."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Judy Branfman papers and \"Standing Our Ground\" records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This collection includes a Chinatown user survey from 1988, a transcript and an audio recording of an interview with Kam Lee and Carol Lee of Chinatown from 1989, and pictures of Chinatown from 1989."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Kwong Kao Chinese School, Gung Ho Club records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "One of CHSNE's many collections. This collection has not been processed yet, but consists of organizational files."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Margaret Wong Collection [restauranteur]"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "One of CHSNE's many collections. This collection has not been processed yet. Enquiries should be made to CHSNE for research availability"
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Menu Collection"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Collection of menus from Chinese restaurants in Boston's Chinatown, Greater Boston, and New England."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Mong Q. Lee collection"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This collection contains most of Mong Q. Lee's belongings such as diplomas, certificates, arts, newspaper articles as well as letters."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "National Register of Historic Places Multiple Property Documentation Form for Boston's Chinatown"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "One research file, dated June 1, 2016, containing a copy of the National Register of Historic Places Multiple Property Documentation Form for Boston's Chinatown."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Newspapers at Northeastern University Archives and Special Collections"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This collection contains issues from Sampan, and other newspapers, such as the Boston Globe and the Boston Phoenix, that document Chinatown. The newspapers include photographs of Chinatown and notable Chinatown figures, and reporting on continued development and shrinking of Chinatown."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Norman B. Leventhal Map Center Collection"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Maps of Boston (including Chinatown) from the 1800s to the present day and atlases showing buildings and owners from the 1870s to 1980s. The collection also includes plans and maps from the Boston Redevelopment Authority (1960s to 1990s)."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Rose Lok Collection"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "fully digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This is a collection of materials that concern Rose Lok and the Chinese Patriotic Flying Corps. Several items involve Lok's co-pilots and other special interviews. Also included are emails explaining how the collection came to be in the possession of CHSNE."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Storytelling sessions with ACDC Hudson Street residents and Cynthia Yee January 2020"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "personal collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "fully digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Collection of audio recordings of storytelling sessions with ACDC, Hudson Street residents, and Cynthia Yee from January 2020."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Tunney Lee Collection"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This is one of many CHSNE's collections. It is currently being processed and is not available for research."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Wah Lum Kung Fu Athletic Association/Wah Lum Kung Fu New England Headquarter records"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "partially digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Wah Lum Kung Fu has been located in Boston's Chinatown for more than 40 years. The establishment has been active in most of Chinatown's public celebrations, like the lion dance and martial arts performances. It has brought surrounding communities to Chinatown as students and practitioners, as well as taking Chinese traditions out in performances all around New England."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Washing"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "website"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "fully digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Washing is an art project created in 2021 about the legacy of the I-90 and I-93 highways in Chinatown, consisting of interviews with Chinatown residents and community members (Michael Liu, Doug Brugge, and Mary Knasas) collected in collaboration with a team of residents from Chinatown. Interviews are audio only. There is ongoing work aimed at creating a film, zine, and website for this project."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Women's Oral History"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "This is one of CHSNE's many collections. It currently has not been processed yet. Enquiries should be made to CHSNE for research availability."
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Yu Brothers Collection"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "archival collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "not digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "All three Yuu brothers served in the U.S. armed forces during WWII.  The Yuu family is believed to be the only Chinese American family to have three sons to serve in World War II at the same time.  Their father served under Gen. John J. Pershing in World War I. (Courtesy of Joseph Yuu and CHSNE collection.)"
+        }
+      }, {
+        "collectionTitle" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Yu-Wen Wu Lantern Projects"
+        },
+        "collectionTypeLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "personal collection"
+        },
+        "digitizationStatusLabel" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "fully digitized"
+        },
+        "description" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Yu-Wen Wu Lantern Projects is an outdoor public art project commissioned by the Greenway Conservancy. The lanterns are physical objects created to tell the history and the present of Boston's Chinatown. Accompanying this artwork is a catalogue of descriptions of each lantern (photographs and artworks) and a video that describes the community engagement process and the fabrication."
+        }
+      } ]
+    }
+  }

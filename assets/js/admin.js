@@ -472,7 +472,7 @@ drstk.backbone_modal.Application = Backbone.View.extend({
             if (end_date != undefined) {
                 end_date = end_date.attributes.value[0];
             }
-            
+
             if ((this.current_tab == 6
                 && ((start_date != "" && start_date != undefined) || (end_date != "" && end_date != undefined))
                 && this.validTime() == true)
@@ -480,7 +480,7 @@ drstk.backbone_modal.Application = Backbone.View.extend({
                 || (this.current_tab == 5 && this.validMap() == true)
                 || (this.current_tab == 1)
                 || (this.current_tab != 6 && this.current_tab != 1 && this.current_tab != 5)) {// current_tab is actually not a tab -- it's the button for the type of shortcode
-                
+
                 shortcode = '<p>[drstk_' + this.tabs[this.current_tab];
 
                 // If check box is checked then add collection_Id attribute to the shortcode
@@ -489,7 +489,7 @@ drstk.backbone_modal.Application = Backbone.View.extend({
                 }
 
 
-                
+
                 if (ids.length == 0) {
                     jQuery.each(items.models, function(i, item) {
                         if (item.attributes.repo == 'dpla') {
@@ -1298,7 +1298,7 @@ drstk.backbone_modal.Application = Backbone.View.extend({
                                             // this puts spaces around subject headings (or other) that create super long string,
                                             // which bork up the layout
                                             var spacedKey = key.replace(/--/g, ' -- ');
-                                            
+
                                             facet_html += "<tr>" +
                                             		        "<td>" +
                                             		          "<a href='' data-facet-val='" + key + "' data-facet-name='" + this_facet + "' class='drs-facet-add'>" + spacedKey + "</a>" +

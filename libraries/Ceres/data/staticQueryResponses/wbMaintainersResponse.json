@@ -1,0 +1,263 @@
+{
+  "head" : {
+    "vars" : [ "qid", "maintainerLabel", "count" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q88"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese Historical Society of New England"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "9"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q42"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Northeastern University Archives and Special Collections"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "6"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q206"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "University Archives and Special Collections, Joseph P. Healey Library, University of Massachusetts Boston"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "5"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q90"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Radcliffe Institute for Advanced Study"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q221"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Lily Xie"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q93"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Yu-Wen Wu"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q213"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Carmen Chan"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q87"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "City of Boston Archives"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q86"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Asian Community Development Corporation"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q222"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Crystal Bi Wegner"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q208"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese Consolidated Benevolent Association of New England"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q201"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Moakley Archive & Institute"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q215"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cynthia Yee"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q89"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Cambridge Historical Commission"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q91"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Norman B. Leventhal Map & Education Center at the Boston Public Library"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q228"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Gianna Stewart"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q209"
+      },
+      "maintainerLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Wah Lum Kung Fu of the U.S.A."
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "1"
+      }
+    } ]
+  }
+}

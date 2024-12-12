@@ -4,15 +4,15 @@
  */
 
 get_header();
-$view = quest_get_view();
+$view = ceres_get_view();
 
 ?>
 
 <div id="content">
-	<?php quest_title_bar($view); ?>
+	<?php ceres_title_bar($view); ?>
 
-	<div class="quest-row site-content">
-		<div class="<?php echo apply_filters( 'quest_content_container_cls', 'container' ); ?>">
+	<div class="ceres-row site-content">
+		<div class="<?php echo apply_filters( 'ceres_content_container_cls', 'container' ); ?>">
 			<div class="row">
 
 				<div id="primary" class="content-area col-md-12">
@@ -39,6 +39,6 @@ $view = quest_get_view();
 		</div>
 		<!-- .container -->
 	</div>
-	<!-- .quest-row -->
+	<!-- .ceres-row -->
 </div><!-- #content -->
 <?php get_footer(); ?>

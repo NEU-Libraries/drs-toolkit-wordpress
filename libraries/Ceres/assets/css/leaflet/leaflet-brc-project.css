@@ -1,0 +1,584 @@
+/*** css code for leaflet-brc-project. ***/
+
+.ceres-container {
+    height: 600px;
+    width:
+}
+
+
+#map {
+    height: 600px;
+    margin-right: 50px;
+    /*left: 319px;*/
+    position: relative;
+    width: 100%;
+    right: 0;
+    /*top: 63.8px;*/
+    bottom: 0px;
+}
+
+.main-header {
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-name h1 {
+    font-size: 1.5em;
+    margin: .4em 0;
+    display: inline-block;
+}
+
+.location-point-popup {
+    font-size: 10px;
+}
+
+.leaflet-popup-content {
+    max-width: 250px;
+}
+
+.leaflet-container {
+    background: white;
+    border: 1px solid black;
+}
+
+.body-container {
+    display: flex;
+}
+
+.filters-container {
+    width: 300px;
+    /* background-color: #B1D1E3; */
+    /* margin-right: 50px; */
+}
+
+.filters-section {
+    width: 286px;
+    margin: 20px 5px 20px 5px;
+    background: white;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.filters-header {
+    font-weight: 500;
+    border-bottom: 1px solid #808080;
+    padding: 4px 10px 4px 10px;
+}
+
+.location-section {
+    padding-bottom: 20px;
+}
+
+.incidents-section,
+.location-section {
+    margin-left: 25px;
+}
+
+.inner-section {
+    margin: 15px;
+    position: relative;
+    transition: .3s opacity, .6s max-height;
+    z-index: 2;
+}
+
+#refine-btn {
+    border: none;
+    background: white;
+    color: blue;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#tooltip-section {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    right: 50px;
+    margin-top: 51px;
+    overflow: auto;
+    background: white;
+    z-index: 999;
+    border: 2px solid black;
+}
+
+#tooltip-section .location-point-popup {
+    border-bottom: 1px solid #808080;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.display-none {
+    display: none;
+}
+
+.popup-list {
+    list-style: none;
+}
+
+.cluster-border {
+    border: 4px solid blue;
+}
+
+.location-list {
+    list-style: none;
+}
+
+.list-item {
+    padding-bottom: 6px;
+}
+
+#date-facet-section,
+#art-category-section,
+#neighbourhood-category-section,
+#material-category-section {
+    height: 200px;
+    overflow: auto;
+}
+
+#filter-cards {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+section.filter-cards {
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+#filter-cards ul {
+    text-align: left;
+}
+
+.transition,
+p,
+ul li i:before,
+ul li i:after {
+    transition: all 0.3s;
+}
+
+#filter-cards .no-select,
+#filter-cards h2 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+#filter-cards h1 {
+    color: #000;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+#filter-cards h2 {
+    color: #cc071e;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: left;
+    padding: 15px 15px 0;
+    text-transform: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#filter-cards ul {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+}
+
+#filter-cards ul li {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    box-shadow: 0 3px 50px -2px rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color: transparent;
+}
+
+#filter-cards ul li+li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#filter-cards ul li:last-of-type {
+    padding-bottom: 0;
+}
+
+#filter-cards ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 28px;
+    right: 15px;
+}
+
+#filter-cards ul li i:before,
+ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: #cc071e;
+    width: 3px;
+    height: 9px;
+}
+
+#filter-cards ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+#filter-cards ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+#filter-cards ul li .hidden-checkbox {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    touch-action: manipulation;
+}
+
+#filter-cards ul li input[type=checkbox]:checked~h2 {
+    color: #000;
+}
+
+#filter-cards ul li input[type=checkbox]:checked~div {
+    /*margin-top: 0;
+   */
+    max-height: 0;
+    transition: .3s;
+    opacity: 0;
+    /*transform: translate(0, 50%);
+   */
+}
+
+#filter-cards ul li input[type=checkbox]:checked~i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+#filter-cards ul li input[type=checkbox]:checked~i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+
+/*** Css code for search box ***/
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.search-container button {
+    float: right;
+    padding: 8px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+.popup-image-section {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    */
+    /* max-height: 206px;
+    max-width: 273px;
+    */
+    width: auto;
+}
+
+.popup-image-section img {
+    flex-shrink: 0;
+    min-width: 20%;
+    min-height: 20%;
+    max-height: 206px;
+    max-width: 273px;
+}
+
+.leaflet-popup-close-button {
+    color: #000000 !important;
+}
+
+
+/*** Css code related to more information styling in popup on map. ***/
+
+.more-info-span {
+    float: right;
+    text-decoration: none;
+    color: #000000 !important;
+}
+
+.more-info-span:hover {
+    color: #0078A8 !important;
+}
+
+.more-info-section {
+    padding: 10px;
+    list-style: none;
+}
+
+.marker-cluster-small {
+    background-color: #2f83c6 !important;
+    color: white;
+}
+
+.marker-cluster-small div {
+    background-color: #2f83c6 !important;
+    color: white;
+}
+
+.marker-cluster-medium {
+    background-color: #2f83c6 !important;
+    color: white;
+}
+
+.marker-cluster-medium div {
+    background-color: #2f83c6 !important;
+    color: white;
+}
+
+.marker-cluster-large {
+    background-color: #2f83c6 !important;
+    color: white;
+}
+
+.marker-cluster-large div {
+    background-color: #2f83c6 !important;
+    color: white;
+}
+
+
+/***
+  Css related to slide in.
+***/
+
+#slide-in {
+    position: absolute;
+    width: 250px;
+    background: white;
+    margin-left: -250px;
+    transition: 1.5s;
+}
+
+#slide-in.in {
+    margin-left: 0px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.leaflet-left {
+    transform: translateX(55px);
+}
+
+.active-sidebar .leaflet-left {
+    transform: translateX(490px);
+    transition: transform 350ms;
+}
+
+.sidebar {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    width: 46px;
+    max-width: 368px;
+    z-index: 99999;
+    background: #fff;
+    box-shadow: none;
+    overflow: hidden;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    height: 600px;
+    top: 74px;
+    bottom: 0px;
+}
+
+.active-sidebar .sidebar {
+    /* max-width: 760px; */
+    width: 100%;
+}
+
+
+/* @media (min-width: 768px) {
+    .sidebar {
+        top: 134px;
+        left: 124px;
+        height: 570px;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        transition: width 500ms;
+    }
+    .leaflet-left {
+        transform: translateX(55px);
+    }
+    .active-sidebar .sidebar {
+        max-width: 480px;
+        width: 100%;
+        transition: width 1s;
+    }
+} */
+
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    background: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.active-sidebar .close-button {
+    pointer-events: all;
+    opacity: 1;
+    transition: opacity 100ms ease-in-out;
+}
+
+.sidebar .close-button svg {
+    fill: #fff;
+}
+
+.sidebar::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 44px;
+    width: 100%;
+    height: 40px;
+    background: #0052b1;
+}
+
+.active-sidebar .sidebar::before {
+    left: 42px;
+}
+
+.sidebar svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #3f3f3f;
+    pointer-events: none;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100%;
+}
+
+.sidebar-menu li {
+    padding: 10px 11px;
+    cursor: pointer;
+}
+
+
+/* .sidebar-menu li:last-child {
+    margin-top: auto;
+}
+
+.sidebar-menu li:hover:last-child svg {
+    animation: rotation 500ms ease-in;
+    transform-origin: center;
+} */
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.active-item {
+    background: #0052b1;
+}
+
+.active-item svg {
+    fill: #fff;
+}
+
+/*.item-content {
+    display: none;
+    margin-top: 8px;
+    padding-right: 10px;
+    height: 100%;
+}
+*/
+.item-content .content {
+    /* overflow: auto; */
+    margin-top: 15px;
+    height: calc(100% - 50px);
+    /* padding-right: 10px; */
+}
+
+.sidebar-content {
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    margin-bottom: 15px;
+    transition: opacity 500ms;
+    position: relative;
+    top: 20px;
+    /* overflow: hidden; */
+}
+
+.active-sidebar .sidebar-content {
+    opacity: 1;
+    pointer-events: visible;
+    transition: opacity 200ms;
+}
+
+.sidebar-content h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    white-space: nowrap;
+    width: calc(100% - 10px);
+    height: 25px;
+    margin: 0;
+    text-overflow: ellipsis;
+    /* overflow: hidden; */
+}
+
+.active-content {
+    display: block;
+}
+
+.ceres-container ul.sidebar-menu {
+    padding-left: 0;
+}
+
+.ceres-container .sidebar-menu li {
+	list-style-type: none;
+}

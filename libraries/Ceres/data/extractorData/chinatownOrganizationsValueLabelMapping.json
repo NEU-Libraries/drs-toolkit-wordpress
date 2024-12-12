@@ -1,0 +1,20 @@
+{
+    "organizationLabel" : "official name",
+    "orgTypeLabel" : "organization type",
+    "streetAddress" : "street address",
+    "inceptionYear" : "inception",
+    "personLabel" : null,
+    "createdCollections" : null,
+    "maintainsCollections" : null,
+    "donatedCollections" : null,
+    "description" : null,
+    "wdItemPropLabel" : null,
+    "wdItem" : null,
+    "orgTypePropLabel" : null,
+    "streetAddressPropLabel" : null,
+    "inceptionPropLabel" : null,
+    "phoneNumber" : null,
+    "phoneNumberPropLabel" : null,
+    "officialName" : null,
+    "officialNamePropLabel" : null
+}

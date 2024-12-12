@@ -1,0 +1,143 @@
+{
+  "head" : {
+    "vars" : [ "qid", "subjectLabel", "count" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q190"
+      },
+      "subjectLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Chinese cultural activities"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "15"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q184"
+      },
+      "subjectLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "urban development"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "8"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q191"
+      },
+      "subjectLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "immigrants' rights"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "7"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q186"
+      },
+      "subjectLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "labor rights"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "4"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q185"
+      },
+      "subjectLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "bilingual education"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "3"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q187"
+      },
+      "subjectLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "tenants' rights"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "3"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q183"
+      },
+      "subjectLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "race-related violence"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q188"
+      },
+      "subjectLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "COVID-19"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2"
+      }
+    }, {
+      "qid" : {
+        "type" : "literal",
+        "value" : "Q182"
+      },
+      "subjectLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "women's history"
+      },
+      "count" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2"
+      }
+    } ]
+  }
+}

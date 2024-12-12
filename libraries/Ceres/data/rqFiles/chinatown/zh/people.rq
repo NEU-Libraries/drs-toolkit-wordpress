@@ -1,0 +1,79 @@
+SELECT ?langCode ?qid ?personLabel ?personDescription ?createdCollections ?foundedOrganizations ?maintainsCollections ?donatedCollections
+?donorPropLabel ?creatorPropLabel ?maintainerPropLabel ?founderPropLabel
+?name ?namePropLabel ?officialWebsite ?officialWebsitePropLabel ?emailAddress ?emailAddressPropLabel
+WHERE {
+   # variables used in query
+   BIND(wdt:P7 AS ?instanceOf).
+   BIND(wdt:P76 AS ?hasName).
+   BIND(wdt:P24 AS ?hasDonor).
+   BIND(wdt:P28 AS ?hasCreator).
+   BIND(wdt:P11 AS ?hasMaintainer).
+   BIND(wdt:P10 AS ?hasFounder).
+   BIND(wdt:P22 AS ?hasWebsite).
+   BIND(wdt:P16 AS ?hasEmail).
+   BIND(wd:Q21 AS ?human).
+   BIND("zh" as ?langCode).
+   BIND("http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/" AS ?baseURI)
+
+   ?person ?instanceOf ?human;
+        ?hasName ?name.
+   FILTER(LANG(?name) = ?langCode).
+   
+   BIND(REPLACE(STR(?person), ?baseURI, "") AS ?qid).
+
+   OPTIONAL{?person ?hasWebsite ?officialWebsite.}
+   OPTIONAL{?person ?hasEmail ?emailAddress.}
+   OPTIONAL{
+        ?person schema:description ?personDescription.
+        FILTER(LANG(?personDescription) = ?langCode).
+   }
+
+   ?donorProp wikibase:directClaim ?hasDonor.
+   ?creatorProp wikibase:directClaim ?hasCreator.
+   ?maintainerProp wikibase:directClaim ?hasMaintainer.
+   ?founderProp wikibase:directClaim ?hasFounder.
+   ?nameProp wikibase:directClaim ?hasName.
+   ?officialWebsiteProp wikibase:directClaim ?hasWebsite.
+   ?emailAddressProp wikibase:directClaim ?hasEmail.
+
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "zh,en". 
+     ?person rdfs:label ?personLabel.
+     ?donorProp rdfs:label ?donorPropLabel.
+     ?creatorProp rdfs:label ?creatorPropLabel.
+     ?maintainerProp rdfs:label ?maintainerPropLabel.
+     ?founderProp rdfs:label ?founderPropLabel.
+     ?nameProp rdfs:label ?namePropLabel.
+     ?officialWebsiteProp rdfs:label ?officialWebsitePropLabel.
+     ?emailAddressProp rdfs:label ?emailAddressPropLabel.
+   }
+     
+   {
+     SELECT ?innerPerson
+            (group_concat(distinct ?createdCollectionQid; separator="; ") as ?createdCollections)
+            (group_concat(distinct ?foundedOrgQid; separator="; ") as ?foundedOrganizations)
+            (group_concat(distinct ?maintainsCollectionQid; separator="; ") as ?maintainsCollections)
+            (group_concat(distinct ?donatedCollectionQid; separator="; ") as ?donatedCollections)
+     WHERE {
+       ?innerPerson ?instanceOf ?human.
+       OPTIONAL{?innerPerson ^wdt:P28 ?createdCollection.
+               BIND(REPLACE(STR(?createdCollection), "http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/", "") AS ?createdCollectionQid).
+               ?createdCollection rdfs:label ?createdCollectionLabel.
+               FILTER(LANG(?createdCollectionLabel) = "zh").
+       OPTIONAL{?innerPerson ^wdt:P10 ?foundedOrganization.
+               BIND(REPLACE(STR(?foundedOrganization), "http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/", "") AS ?foundedOrgQid).
+               ?foundedOrganization rdfs:label ?foundedOrgLabel.
+               FILTER(LANG(?foundedOrgLabel) = "zh").
+       OPTIONAL{?innerPerson ^wdt:P11 ?maintainsCollection.
+               BIND(REPLACE(STR(?maintainsCollection), "http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/", "") AS ?maintainsCollectionQid).
+               ?maintainsCollection rdfs:label ?maintainsCollectionLabel.
+               FILTER(LANG(?maintainsCollectionLabel) = "zh").
+               }
+       OPTIONAL{?innerPerson ^wdt:P24 ?donatedCollection.
+               BIND(REPLACE(STR(?donatedCollection), "http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/", "") AS ?donatedCollectionQid).
+               ?donatedCollection rdfs:label ?donatedCollectionLabel.
+               FILTER(LANG(?donatedCollectionLabel) = "zh").
+               }
+     } GROUP BY ?innerPerson 
+   }
+  filter(?innerPerson = ?person)
+} ORDER BY (?personLabel)

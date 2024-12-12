@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Tools here for connecting the broader WP/drs-tk environment to the 
+ * Tools here for connecting the broader WP/drs-tk environment to the
  * semi-independent CERES code under /libraries.
- * 
+ *
  * Future of this approach is uncertain as of 2023-03-07 10:59:40
- * 
- * 
- * 
+ *
+ *
+ *
  */
 
 use Ceres\ViewPackage\ViewPackage;
@@ -19,7 +19,7 @@ require_once( plugin_dir_path( __FILE__ ) . '/libraries/Ceres/config/ceresSetup.
 /* REGISTER SCRIPTS AND STYLES USED BY PARTICULAR VIEW PACKAGES */
 
 /* Registering them will make them available everywhere, but it looks
-*  like I can enqueue them from within a shortcode handler, so I'll do 
+*  like I can enqueue them from within a shortcode handler, so I'll do
 *  it there based on need. 2023-03-07 17:58:38
 */
 
@@ -48,12 +48,11 @@ add_filter( 'query_vars', 'ceres_query_vars' );
 
 
 function ceres_asset_adapters() {
-	
+
 	//register scripts
 
 	//datatables
-	wp_register_script('ceres_datatables', plugins_url('//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js'));
-
+	wp_register_script('ceres_datatables', 'https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js');
 	//leaflet
 	wp_register_script('ceres_leaflet', plugins_url('/libraries/Ceres/assets/js/leaflet/leaflet1.7.1.js', __FILE__));
 	wp_register_script('ceres_leaflet_wicket', plugins_url('/libraries/Ceres/assets/js/leaflet/brc/wicket-1.3.8.js', __FILE__));
@@ -79,16 +78,16 @@ function ceres_asset_adapters() {
 	wp_register_style('ceres_leaflet_brc-project', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-brc-project.css', __FILE__));
 	wp_register_style('ceres_leaflet_markercluster', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-js-markercluster/MarkerCluster.css', __FILE__));
 	wp_register_style('ceres_leaflet_markercluster_default', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-js-markercluster/MarkerCluster.Default.css', __FILE__));
-	
 
-	
+
+
 
 	//enqueue scripts
 	//@todo  make enqueueing conditional upon the need
-	
+
 	//datatables
 	wp_enqueue_script('ceres_datatables');
-	
+
 	//leaflet
 	wp_enqueue_script('ceres_leaflet');
 	wp_enqueue_script('ceres_leaflet_wicket');
@@ -113,7 +112,7 @@ function ceres_asset_adapters() {
 	wp_enqueue_style('ceres_leaflet_brc-project');
 	wp_enqueue_style('ceres_leaflet_markercluster');
 	wp_enqueue_style('ceres_leaflet_markercluster_default');
-	
+
 
 }
 
@@ -152,7 +151,7 @@ function ceres_renderer_handler($atts) {
 			'renderer' => '',
 		),
 		$atts,
-		'ceres_renderer'		
+		'ceres_renderer'
 	);
 	$rendererName = $atts['renderer'];
 	return "<h2>hi! I'll render from a $rendererName someday!</h2>";
@@ -164,7 +163,7 @@ function ceres_vp_handler($atts) {
 		array(
 			'vp_name' => '',
             'use_local_response_data' => false,
-            'local_response_name' => '',	
+            'local_response_name' => '',
 			'extractor_reorder_mapping_name' => null,
 			'extractor_remove_vars_name' => null,
 			'extractor_value_label_mapping_name' => null,
@@ -185,7 +184,7 @@ function ceres_vp_handler($atts) {
 		case 'leaflet_wikidata_for_public_art_map':
 		case 'leaflet_wikidata_for_public_art_table':
 			$vp->setFetcherQueryFromFile(null, CERES_ROOT_DIR . '/data/rqFiles/publicart/leaflet.rq');
-			$vp->getRenderer()->getFetcher()->setEndpoint('https://query.wikidata.org/sparql');	
+			$vp->getRenderer()->getFetcher()->setEndpoint('https://query.wikidata.org/sparql');
 		break;
 	}
 
@@ -231,7 +230,7 @@ function expandAttsToFilePath(array $atts): array {
 				if (!is_null($value)) {
 					$atts[$name] = CERES_ROOT_DIR . '/data/extractorData/' . $value . '.json';
 				}
-				
+
 			break;
 			//attributes to go to `staticQueryResponses` directory
 			case 'local_response_name':

@@ -35,8 +35,8 @@ $renderer->setJwPlayerOptions($jwPlayerOptions);
 
 
 <div id="content">
-	<div class="quest-row site-content">
-		<div class="<?php echo apply_filters( 'quest_content_container_cls', 'container' ); ?>">
+	<div class="ceres-row site-content">
+		<div class="<?php echo apply_filters( 'ceres_content_container_cls', 'container' ); ?>">
 			<div id="drs-loading"></div>
 			<div class="row">
 				<div id="primary" class="content-area col-md-9">
@@ -107,7 +107,7 @@ $renderer->setJwPlayerOptions($jwPlayerOptions);
 		</div>
 		<!-- .container -->
 	</div>
-	<!-- .quest-row -->
+	<!-- .ceres-row -->
 </div><!-- #content -->
 
 <?php get_footer(); ?>

@@ -1,0 +1,65 @@
+SELECT DISTINCT ?collectionTitle ?collectionTypeLabel ?digitizationStatusLabel ?description
+
+WHERE {
+  # variables used in query
+  BIND(wdt:P7 AS ?instanceOf).
+  BIND(wdt:P27 AS ?hasTitle).
+  BIND(wdt:P50 AS ?hasCollectionType).
+  BIND(wdt:P37 AS ?hasDescription).
+  BIND(wdt:P17 AS ?hasDescriptionSite).
+  BIND(wdt:P22 AS ?hasWebsite).
+  BIND(wdt:P40 AS ?hasDigitizationStatus).
+  BIND(wdt:P42 AS ?hasProjectStatus)
+  BIND(wdt:P43 AS ?hasProjectStartDate).
+  BIND(wdt:P44 AS ?hasProjectEndDate).
+  BIND(wdt:P13 AS ?hasLanguage).
+  BIND(wdt:P24 AS ?hasDonor).
+
+  BIND(wd:Q85 AS ?ChinatownCollection).
+  BIND("en" as ?langCode).
+  BIND("http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/" AS ?baseURI).
+
+  ?collection ?instanceOf ?ChinatownCollection;
+              ?hasTitle ?collectionTitle.
+
+  FILTER(LANG(?collectionTitle) = ?langCode).
+   
+  BIND(REPLACE(STR(?collection), ?baseURI, "") AS ?qid).
+  OPTIONAL{?collection ?hasCollectionType ?collectionType.}
+  OPTIONAL{?collection ?hasDescription ?description.
+          FILTER(LANG(?description) = ?langCode).}
+  OPTIONAL{?collection ?hasDescriptionSite ?describedAtURL.}
+  OPTIONAL{?collection ?hasDigitizationStatus ?digitizationStatus.}
+  OPTIONAL{?collection ?hasProjectStatus ?projectStatus.
+          FILTER(LANG(?projectStatus) = ?langCode).}
+  OPTIONAL{?collection ?hasProjectStartDate ?projectStart.}
+  OPTIONAL{?collection ?hasProjectEndDate ?projectEnd.}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". 
+    ?collection rdfs:label ?collectionLabel.
+    ?collectionTitleProp rdfs:label ?collectionTitlePropLabel.
+    ?collectionType rdfs:label ?collectionTypeLabel.
+    ?descriptionProp rdfs:label ?descriptionPropLabel.
+    ?digitizationStatus rdfs:label ?digitizationStatusLabel.
+    ?digitizationStatusProp rdfs:label ?digitizationStatusPropLabel.
+  }
+  ?collectionTitleProp wikibase:directClaim ?hasTitle.
+  ?collectionTypeProp wikibase:directClaim ?hasCollectionType.
+  ?descriptionProp wikibase:directClaim ?hasDescription.
+  ?describedAtURLProp wikibase:directClaim ?hasDescriptionSite.
+  ?digitizationStatusProp wikibase:directClaim ?hasDigitizationStatus.
+  ?languageProp wikibase:directClaim ?hasLanguage.
+   
+  {
+    SELECT ?innerCollection 
+          (group_concat(distinct ?languageLabel; separator="; ") as ?languages)
+    WHERE {
+      ?innerCollection wdt:P7 wd:Q85.
+      OPTIONAL{?innerCollection wdt:P13 ?language}
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "en". 
+        ?language rdfs:label ?languageLabel.            
+      }
+    }
+    GROUP BY ?innerCollection
+  }
+FILTER(?innerCollection = ?collection)
+} ORDER BY (?collectionLabel)

@@ -1,0 +1,44 @@
+select distinct ?work ?workDescription ?workLabel ?coords ?address
+(group_concat(distinct ?workAlias; separator="; ") as ?aliases)
+(sample(?image) AS ?image) 
+(sample(?DRSImageURL) AS ?DRSImageURL)
+(group_concat(distinct (year(?dateInstalled)); separator=" or ") as ?yearInstalled)
+(group_concat(distinct (year(?dateRemoved)); separator=" or ") as ?yearRemoved)
+(group_concat(distinct ?materialLabel; separator="; ") as ?materials)
+(group_concat(distinct ?categoryLabel; separator="; ") as ?categories)
+(group_concat(distinct ?creatorLabel; separator="; ") as ?creators)
+(group_concat(distinct ?neighborhoodLabel; separator="; ") as ?neighborhoods)
+(group_concat(distinct ?depictsLabel; separator="; ") as ?depicted)
+(group_concat(distinct ?commemoratesLabel; separator="; ") as ?commemorated)
+where {
+  hint:Query hint:optimizer "None".
+  # Items tagged as being on the focus list of the Neighborhood Public Art in Boston WikiProject
+  # and with genre public art. Only grab items that have statements for coordinate location, instance of, 
+  # located in administrative territorial entity properties
+  ?work wdt:P5008 wd:Q108040915;
+        wdt:P136 wd:Q557141;
+        wdt:P625 ?coords;
+        wdt:P31 ?category;
+        wdt:P131 ?neighborhood.
+  optional{?work wdt:P571 ?dateInstalled.}
+  optional{?work wdt:P576 ?dateRemoved.}
+  optional{?work wdt:P18 ?image.}
+  optional{?work wdt:P170 ?creator.}
+  optional{?work wdt:P6375 ?address.}
+  optional{?work wdt:P186 ?material.}
+  optional{?work wdt:P180 ?depicts.}
+  optional{?work wdt:P547 ?commemorates.}
+  optional{?work wdt:P6500 ?DRSImageURL.
+          FILTER(regex(str(?DRSImageURL), '^https://repository.library.northeastern.edu/'))}
+  service wikibase:label {bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". 
+                          ?work rdfs:label ?workLabel.
+                          ?work schema:description ?workDescription.
+                          ?work skos:altLabel ?workAlias.
+                          ?category rdfs:label ?categoryLabel.
+                          ?creator rdfs:label ?creatorLabel.
+                          ?material rdfs:label ?materialLabel.
+                          ?neighborhood rdfs:label ?neighborhoodLabel.
+                          ?depicts rdfs:label ?depictsLabel.
+                          ?commemorates rdfs:label ?commemoratesLabel.
+                         }
+ } group by ?work ?workDescription ?workLabel ?coords ?address

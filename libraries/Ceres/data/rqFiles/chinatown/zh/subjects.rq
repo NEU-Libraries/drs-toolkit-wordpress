@@ -1,0 +1,14 @@
+SELECT ?qid ?subjectLabel (COUNT(?collection) AS ?count)
+WHERE {
+   # variables used in query
+   BIND(wdt:P7 AS ?instanceOf).
+   BIND(wdt:P23 AS ?hasSubject).
+   BIND(wd:Q85 AS ?ChinatownCollection).
+   BIND("http://ec2-34-227-69-60.compute-1.amazonaws.com/entity/" AS ?baseURI)
+
+   ?collection ?instanceOf ?ChinatownCollection;
+               ?hasSubject ?subject.
+
+   BIND(REPLACE(STR(?subject), ?baseURI, "") AS ?qid).
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "zh". }
+} GROUP BY ?qid ?subjectLabel ORDER BY DESC(?count)
