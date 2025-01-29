@@ -125,9 +125,23 @@ add_action('wp_enqueue_scripts', 'ceres_asset_adapters');
 add_shortcode('ceres_vp', 'ceres_vp_handler');
 add_shortcode('ceres_renderer', 'ceres_renderer_handler');
 add_shortcode('ceres_chinatown_qid', 'ceres_chinatown_qid_handler');
+add_shortcode('ceres_text_media', 'ceres_text_media_handler');
 // add_shortcode('ceres_test', 'ceres_test_handler');
 
 /* DEFINE THE HANDLERS USED BY THE SHORTCODES */
+
+function ceres_text_media_handler($atts) {
+	$atts = shortcode_atts(
+		['pid'],
+		$atts,
+		'ceres_text_media'
+	);
+	// the DRS pid for the text/media pair
+	//$pid = $atts['pid'];
+
+	return "text-media";
+
+}
 
 function ceres_chinatown_qid_handler($atts) {
 	$atts = shortcode_atts(
