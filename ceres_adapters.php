@@ -79,7 +79,7 @@ function ceres_asset_adapters() {
 	wp_register_style('ceres_leaflet_brc-project', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-brc-project.css', __FILE__));
 	wp_register_style('ceres_leaflet_markercluster', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-js-markercluster/MarkerCluster.css', __FILE__));
 	wp_register_style('ceres_leaflet_markercluster_default', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-js-markercluster/MarkerCluster.Default.css', __FILE__));
-	
+	wp_register_style('ceres-text-media', plugins_url('/libraries/Ceres/assets/css/text-media.css'));
 
 	
 
@@ -113,6 +113,7 @@ function ceres_asset_adapters() {
 	wp_enqueue_style('ceres_leaflet_brc-project');
 	wp_enqueue_style('ceres_leaflet_markercluster');
 	wp_enqueue_style('ceres_leaflet_markercluster_default');
+	wp_enqueue_style('ceres-text-media');
 	
 
 }
