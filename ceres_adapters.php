@@ -133,16 +133,24 @@ add_shortcode('ceres_text_media', 'ceres_text_media_handler');
 /* DEFINE THE HANDLERS USED BY THE SHORTCODES */
 
 function ceres_text_media_handler($atts) {
+
+	if (isset($atts['pid'])) {
+		$pid = $atts['pid'];
+	} else {
+		return 'No PID set. Check the shortcode.';
+	}
+
 	$atts = shortcode_atts(
 		['pid'],
 		$atts,
 		'ceres_text_media'
 	);
 	// the DRS pid for the text/media pair
-	//$pid = $atts['pid'];
+
+	
 
 	// temporary for dev and demo purposes
-	$drsResponse = file_get_contents('https://repository.library.northeastern.edu/api/v1/files/neu:rx918694k');
+	$drsResponse = file_get_contents('https://repository.library.northeastern.edu/api/v1/files/' . $pid);
 
 	$textMediaExtractor = new Drs1ToTextMedia;
 
