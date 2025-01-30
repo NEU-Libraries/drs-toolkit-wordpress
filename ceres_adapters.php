@@ -10,6 +10,8 @@
  * 
  */
 
+use Ceres\Extractor\Drs1ToTextMedia;
+use Ceres\Renderer\TextMedia;
 use Ceres\ViewPackage\ViewPackage;
 
 /* LOAD CERES */
@@ -79,7 +81,7 @@ function ceres_asset_adapters() {
 	wp_register_style('ceres_leaflet_brc-project', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-brc-project.css', __FILE__));
 	wp_register_style('ceres_leaflet_markercluster', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-js-markercluster/MarkerCluster.css', __FILE__));
 	wp_register_style('ceres_leaflet_markercluster_default', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-js-markercluster/MarkerCluster.Default.css', __FILE__));
-	wp_register_style('ceres-text-media', plugins_url('/libraries/Ceres/assets/css/text-media.css'));
+	wp_register_style('ceres-text-media', plugins_url('/libraries/Ceres/assets/css/text-media.css', __FILE__));
 
 	
 
@@ -139,7 +141,20 @@ function ceres_text_media_handler($atts) {
 	// the DRS pid for the text/media pair
 	//$pid = $atts['pid'];
 
-	return "text-media";
+	// temporary for dev and demo purposes
+	$drsResponse = file_get_contents('https://repository.library.northeastern.edu/api/v1/files/neu:rx918694k');
+
+	$textMediaExtractor = new Drs1ToTextMedia;
+
+	$textMediaExtractor->setSourceData($drsResponse);
+	$textMediaExtractor->extract();
+	$renderArray = $textMediaExtractor->getRenderArray();
+
+	$textMediaRenderer = new TextMedia;
+	$textMediaRenderer->setRenderArrayFromArray($renderArray);
+
+	return $textMediaRenderer->render();
+	//return 'ok';
 
 }
 
@@ -154,7 +169,7 @@ function ceres_chinatown_qid_handler($atts) {
 
 
 	$vp = new ViewPackage('chinatown_maintainers_list');
-	$vp->setFetcherOptionValue(null, 'rqReplacements', ['maintainerQid', $qid]);
+	//$vp->setFetcherOptionValue(null, 'rqReplacements', ['maintainerQid', $qid]);
 
 
 
