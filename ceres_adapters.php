@@ -81,9 +81,14 @@ function ceres_asset_adapters() {
 	wp_register_style('ceres_leaflet_brc-project', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-brc-project.css', __FILE__));
 	wp_register_style('ceres_leaflet_markercluster', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-js-markercluster/MarkerCluster.css', __FILE__));
 	wp_register_style('ceres_leaflet_markercluster_default', plugins_url('/libraries/Ceres/assets/css/leaflet/leaflet-js-markercluster/MarkerCluster.Default.css', __FILE__));
-	wp_register_style('ceres-text-media', plugins_url('/libraries/Ceres/assets/css/text-media.css', __FILE__));
-
 	
+	
+	
+	//text-media
+	wp_register_style('ceres-text-media', plugins_url('/libraries/Ceres/assets/css/text-media.css', __FILE__));
+	wp_register_script('ceres-text-media', plugins_url('/libraries/Ceres/assets/js/jquery-3.7.1.min.js', __FILE__));
+	wp_register_script('ceres-jwplayer', 'https://cdn.jwplayer.com/libraries/dTFl0VEe.js');
+	wp_register_script('ceres-jwplayer-init', plugins_url('libraries/Ceres/assets/js/jwplayer-init.js', __FILE__));
 
 	//enqueue scripts
 	//@todo  make enqueueing conditional upon the need
@@ -106,6 +111,12 @@ function ceres_asset_adapters() {
 	wp_enqueue_script('ceres_leaflet_brc_storymaps');
 	//wp_enqueue_script('ceres_leaflet_');
 
+
+
+	//text-media
+	wp_enqueue_script('ceres-text-media');
+	wp_enqueue_script('ceres-jwplayer');
+	wp_enqueue_script('ceres-jwplayer-init');
 
 
 	//enqueue styles
@@ -151,7 +162,7 @@ function ceres_text_media_handler($atts) {
 
 	// temporary for dev and demo purposes
 	$drsResponse = file_get_contents('https://repository.library.northeastern.edu/api/v1/files/' . $pid);
-
+//	$drsResponse = file_get_contents('https://repository.library.northeastern.edu/api/v1/files/neu:4f17kp21x');
 	$textMediaExtractor = new Drs1ToTextMedia;
 
 	$textMediaExtractor->setSourceData($drsResponse);
